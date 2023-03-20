@@ -1,0 +1,4 @@
+"/Applications/CLion 2022.3 EAP.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/aidanliaw/CLionProjects/LinkedListTestCode -B /Users/aidanliaw/CLionProjects/LinkedListTestCode/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/aidanliaw/CLionProjects/LinkedListTestCode/cmake-build-debug

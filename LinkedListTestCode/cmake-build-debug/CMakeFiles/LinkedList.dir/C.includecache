@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aidanliaw/CLionProjects/LinkedListTestCode/LLFP.c
+stdio.h
+-
+stdlib.h
+-
+LLFP.h
+/Users/aidanliaw/CLionProjects/LinkedListTestCode/LLFP.h
+library.h
+/Users/aidanliaw/CLionProjects/LinkedListTestCode/library.h
+
+/Users/aidanliaw/CLionProjects/LinkedListTestCode/LLFP.h
+
+/Users/aidanliaw/CLionProjects/LinkedListTestCode/library.h
+
