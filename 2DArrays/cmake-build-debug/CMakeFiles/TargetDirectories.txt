@@ -1,0 +1,3 @@
+/Users/aidanliaw/CLionProjects/2DArrays/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/aidanliaw/CLionProjects/2DArrays/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/aidanliaw/CLionProjects/2DArrays/cmake-build-debug/CMakeFiles/2DArrays.dir
