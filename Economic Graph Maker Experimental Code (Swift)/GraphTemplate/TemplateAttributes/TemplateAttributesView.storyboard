@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Template Attributes View Controller-->
+        <scene sceneID="T8X-Sz-jW3">
+            <objects>
+                <viewController storyboardIdentifier="TemplateAttributesView" id="8uI-E5-rYb" customClass="TemplateAttributesViewController" customModule="Economic_Graph_Maker_Version_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Hff-ZE-nuq">
+                        <rect key="frame" x="0.0" y="0.0" width="578" height="663"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="UpL-cc-hye">
+                                <rect key="frame" x="0.0" y="0.0" width="578" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <clipView key="contentView" id="QQq-Nf-h0B">
+                                    <rect key="frame" x="1" y="1" width="561" height="586"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="1" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ba8-yO-bCp" customClass="CustomStackView" customModule="InfoBarStackView">
+                                            <rect key="frame" x="0.0" y="586" width="561" height="0.0"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ba8-yO-bCp" firstAttribute="leading" secondItem="QQq-Nf-h0B" secondAttribute="leading" id="1Op-up-yU5"/>
+                                        <constraint firstItem="Ba8-yO-bCp" firstAttribute="top" secondItem="QQq-Nf-h0B" secondAttribute="top" id="e2g-yd-Obz"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ba8-yO-bCp" secondAttribute="trailing" id="uYT-by-7R5"/>
+                                    </constraints>
+                                </clipView>
+                                <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="lIT-3t-War">
+                                    <rect key="frame" x="1" y="587" width="561" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="gDb-lW-WKx">
+                                    <rect key="frame" x="562" y="1" width="15" height="586"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="iyj-eg-rq4">
+                                <rect key="frame" x="0.0" y="602" width="578" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="GII-YD-SNF"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" title="Custom Curve" drawsBackground="YES" id="Ist-lc-SvV">
+                                    <font key="font" metaFont="system" size="48"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="UpL-cc-hye" firstAttribute="leading" secondItem="iyj-eg-rq4" secondAttribute="leading" id="8Jl-4O-dVh"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iyj-eg-rq4" secondAttribute="bottom" constant="602" id="9V0-Cu-3WS"/>
+                            <constraint firstItem="UpL-cc-hye" firstAttribute="trailing" secondItem="iyj-eg-rq4" secondAttribute="trailing" id="N0e-pW-6jF"/>
+                            <constraint firstItem="iyj-eg-rq4" firstAttribute="top" secondItem="Hff-ZE-nuq" secondAttribute="top" id="lqU-Xw-c2v"/>
+                            <constraint firstItem="iyj-eg-rq4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hff-ZE-nuq" secondAttribute="leading" id="qif-9m-255"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iyj-eg-rq4" secondAttribute="trailing" id="yWr-H1-zfE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="curveNameTextField" destination="iyj-eg-rq4" id="x0c-fv-TBh"/>
+                        <outlet property="curveNameTextFieldCell" destination="Ist-lc-SvV" id="lwv-vK-Hsm"/>
+                        <outlet property="customAttributesClipView" destination="QQq-Nf-h0B" id="5ec-pd-01h"/>
+                        <outlet property="customAttributesScrollView" destination="UpL-cc-hye" id="HnD-Qm-eOZ"/>
+                        <outlet property="customAttributesStackView" destination="Ba8-yO-bCp" id="J3u-DU-bSG"/>
+                        <outlet property="templateAttributesView" destination="Hff-ZE-nuq" id="C77-dL-Gi3"/>
+                    </connections>
+                </viewController>
+                <customObject id="NUN-ea-b5H" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="zz3-DL-Gft"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="125.5"/>
+        </scene>
+    </scenes>
+</document>

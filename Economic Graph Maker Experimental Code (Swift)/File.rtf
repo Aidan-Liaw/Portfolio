@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Bold;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa160\partightenfactor0
+
+\f0\fs42\fsmilli21333 \cf0 \expnd0\expndtw0\kerning0
+Graph Preset File Syntax [Graph Save File will have similar syntax)
+\f1\b\fs36 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs29\fsmilli14667 \cf0 Example (Standard)
+\f2\fs24 \
+\
+
+\f0\fs29\fsmilli14667 <!DOCTYPE graphPreset>\
+<root>\
+	<preset>\
+		<name>\'94Demand\'94</name>\
+		<equation>Q=a-bP</equation>\
+		<eqType>\'94Linear\'94</eqType>\
+		<const>a=100</const>\
+		<const>b=1</const>\
+		<xIs>P</xIs>\
+		<yIs>Q</yIs>\
+	</preset>\
+</root>
+\f2\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Example (Modifiable Terms/Coefficients)
+\f2\fs24 \
+\
+
+\f0\fs29\fsmilli14667 <!DOCTYPE graphPreset>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 <preset>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 	<name>\'94Demand"</na"me>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 	<equation>Q=a-bP</equation>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 	<eqType>\'94Linear\'94</eqType>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 	\
+	<var>a</var>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 	<var>b</var>\
+
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 	<xIs>P</xIs>
+\f2\fs24 \
+	
+\f0\fs29\fsmilli14667 <yIs>Q</yIs>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 </preset>\
+\
+<variable>\
+	<var>a=0</var>\
+	<lowerRange>0</lowerRange>\
+	<upperRange>inf</upperRange>\
+	<advLowerRange>-inf</advLowerRange>\
+	<advUpperRange>-inf</advUpperRange>\
+</variable>
+\f2\fs24 \
+\
+
+\f0\fs29\fsmilli14667 <variable>\
+	<var>b=0</var>\
+	<lowerRange>0</lowerRange>\
+	<upperRange>inf</upperRange>\
+	<advLowerRange>-inf</advLowerRange>\
+	<advUpperRange>inf</advUpperRange>\
+</variable>
+\f2\fs24 \
+\
+\
+
+\f0\fs29\fsmilli14667 Example (Piecewise Function)
+\f2\fs24 \
+\
+
+\f0\fs29\fsmilli14667 <!DOCTYPE graphPreset>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 <preset>\
+	<isPiecewise>True</isPiecewise>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 	<name>\'94Keynesian AS"</name>
+\f2\fs24 \
+\pard\pardeftab720\fi960\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 </preset>\
+\
+<equation>\
+	<equation>y=1</equation>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 	<eqType>\'94Linear\'94</eqType>\
+</equation>
+\f2\fs24 \
+
+\f0\fs29\fsmilli14667 \
+<equation>\
+	<equation>y=-sqrt(1-(x-sqrt(a))^2)+2</equation>
+\f2\fs24 \
+\pard\pardeftab720\fi960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 <eqType>\'94Nonlinear\'94</eqType>\
+\pard\pardeftab720\partightenfactor0
+\cf0 	<range>y: 0<x<sqrt(2)</range>\
+	<range>x>sqrt(2)</range>\
+</equation>\
+\
+<equation>\
+	<equation>x=sqrt(2)+1</equation>
+\f2\fs24 \
+	
+\f0\fs29\fsmilli14667 <eqType>\'94Non-Linear\'94</eqType>\
+	<range3>2>y>3</range3>\
+</equation>
+\f2\fs24 \
+}

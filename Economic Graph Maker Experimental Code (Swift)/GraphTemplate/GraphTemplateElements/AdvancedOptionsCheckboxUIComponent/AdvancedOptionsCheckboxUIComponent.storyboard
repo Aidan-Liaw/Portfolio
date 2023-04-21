@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Advanced Options CheckboxUI Component-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController storyboardIdentifier="AdvancedOptionsCheckboxUIComponentID" id="bU7-R8-ocO" customClass="AdvancedOptionsCheckboxUIComponent" customModule="Economic_Graph_Maker_Version_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="467" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0DG-M0-HJw">
+                                <rect key="frame" x="20" y="16" width="427" height="17"/>
+                                <buttonCell key="cell" type="recessed" title="Toggle Advanced Options" bezelStyle="recessed" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IWG-Ce-bjG">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="systemBold" size="12"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="toggleButton:" target="bU7-R8-ocO" id="jIv-pZ-ZgE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0DG-M0-HJw" secondAttribute="bottom" constant="17" id="D0m-nC-Q1d"/>
+                            <constraint firstItem="0DG-M0-HJw" firstAttribute="centerX" secondItem="tOy-S4-hL0" secondAttribute="centerX" id="M7u-Bj-ZLh"/>
+                            <constraint firstItem="0DG-M0-HJw" firstAttribute="centerY" secondItem="tOy-S4-hL0" secondAttribute="centerY" id="bLA-Mt-2wd"/>
+                            <constraint firstItem="0DG-M0-HJw" firstAttribute="top" secondItem="tOy-S4-hL0" secondAttribute="top" constant="17" id="bs0-JF-oag"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UIView" destination="tOy-S4-hL0" id="QGA-Iq-oAa"/>
+                        <outlet property="toggleAdvButton" destination="0DG-M0-HJw" id="OkP-E4-9O9"/>
+                    </connections>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.5" y="47"/>
+        </scene>
+    </scenes>
+</document>

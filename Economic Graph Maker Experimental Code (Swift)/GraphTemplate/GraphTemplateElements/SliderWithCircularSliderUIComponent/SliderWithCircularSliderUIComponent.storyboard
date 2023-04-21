@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slider With Circular SliderUI Component-->
+        <scene sceneID="5mA-it-SN3">
+            <objects>
+                <viewController storyboardIdentifier="SliderWithCircularSliderUIComponentID" id="tFU-YN-eA4" customClass="SliderWithCircularSliderUIComponent" customModule="Economic_Graph_Maker_Version_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Gdl-Kw-GQ0">
+                        <rect key="frame" x="0.0" y="0.0" width="467" height="105"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="34b-S4-bKk">
+                                <rect key="frame" x="18" y="14" width="388" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="TOM-BF-Sv5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="384" id="t1r-yD-6ey"/>
+                                </constraints>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="082-og-xOd"/>
+                                <connections>
+                                    <action selector="takeDoubleValueFrom:" target="YJT-eh-fw5" id="9Ro-F9-Tu5"/>
+                                </connections>
+                            </slider>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="bx2-32-BqT">
+                                <rect key="frame" x="18" y="62" width="282" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="uX7-bC-B8a"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" title="Multiline Label" id="gdZ-FF-Mq9">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YJT-eh-fw5">
+                                <rect key="frame" x="337" y="62" width="110" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="nCk-ws-nWE"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="QCq-Tw-HZY">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="qSu-X0-UZr"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="takeDoubleValueFrom:" target="ATv-3z-egy" id="0le-mE-BUa"/>
+                                </connections>
+                            </textField>
+                            <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ATv-3z-egy">
+                                <rect key="frame" x="421" y="18" width="28" height="30"/>
+                                <sliderCell key="cell" alignment="left" maxValue="100" allowsTickMarkValuesOnly="YES" sliderType="circular" id="tuH-9u-9Vd"/>
+                                <connections>
+                                    <action selector="takeDoubleValueFrom:" target="34b-S4-bKk" id="MHc-kb-BVh"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YJT-eh-fw5" secondAttribute="bottom" constant="62" id="4qP-yo-SdD"/>
+                            <constraint firstAttribute="bottom" secondItem="ATv-3z-egy" secondAttribute="bottom" constant="21" id="5St-mU-TSl"/>
+                            <constraint firstItem="bx2-32-BqT" firstAttribute="bottom" secondItem="YJT-eh-fw5" secondAttribute="bottom" id="6LI-g2-P42"/>
+                            <constraint firstItem="ATv-3z-egy" firstAttribute="top" secondItem="YJT-eh-fw5" secondAttribute="bottom" constant="17" id="8d6-bs-WQR"/>
+                            <constraint firstAttribute="trailing" secondItem="ATv-3z-egy" secondAttribute="trailing" constant="20" symbolic="YES" id="8gY-Ol-k8y"/>
+                            <constraint firstAttribute="bottom" secondItem="bx2-32-BqT" secondAttribute="bottom" constant="62" id="Ban-zN-na1"/>
+                            <constraint firstItem="YJT-eh-fw5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bx2-32-BqT" secondAttribute="trailing" constant="39" id="D2o-oT-bvC"/>
+                            <constraint firstAttribute="trailing" secondItem="YJT-eh-fw5" secondAttribute="trailing" constant="20" symbolic="YES" id="GeJ-dS-O9R"/>
+                            <constraint firstItem="ATv-3z-egy" firstAttribute="top" secondItem="Gdl-Kw-GQ0" secondAttribute="top" constant="60" id="Ry7-Yl-JDe"/>
+                            <constraint firstItem="ATv-3z-egy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="34b-S4-bKk" secondAttribute="trailing" constant="19" id="WEw-Ot-2LY"/>
+                            <constraint firstItem="34b-S4-bKk" firstAttribute="leading" secondItem="Gdl-Kw-GQ0" secondAttribute="leading" constant="20" symbolic="YES" id="bkh-ZW-gAr"/>
+                            <constraint firstItem="YJT-eh-fw5" firstAttribute="trailing" secondItem="ATv-3z-egy" secondAttribute="trailing" id="eXb-T3-E0O"/>
+                            <constraint firstItem="ATv-3z-egy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gdl-Kw-GQ0" secondAttribute="leading" constant="423" id="hfq-dW-fKa"/>
+                            <constraint firstItem="bx2-32-BqT" firstAttribute="top" secondItem="Gdl-Kw-GQ0" secondAttribute="top" constant="20" symbolic="YES" id="job-2p-83q"/>
+                            <constraint firstItem="34b-S4-bKk" firstAttribute="top" secondItem="bx2-32-BqT" secondAttribute="bottom" constant="20" id="oG9-HM-qIV"/>
+                            <constraint firstItem="bx2-32-BqT" firstAttribute="leading" secondItem="Gdl-Kw-GQ0" secondAttribute="leading" constant="20" id="obh-q2-EAF"/>
+                            <constraint firstItem="YJT-eh-fw5" firstAttribute="top" secondItem="Gdl-Kw-GQ0" secondAttribute="top" constant="20" symbolic="YES" id="qaC-PO-RQx"/>
+                            <constraint firstItem="34b-S4-bKk" firstAttribute="top" secondItem="Gdl-Kw-GQ0" secondAttribute="top" constant="63" id="rlX-9Y-hK9"/>
+                            <constraint firstItem="bx2-32-BqT" firstAttribute="top" secondItem="YJT-eh-fw5" secondAttribute="top" id="vce-FH-btG"/>
+                            <constraint firstAttribute="bottom" secondItem="34b-S4-bKk" secondAttribute="bottom" constant="20" symbolic="YES" id="z0y-D6-S9M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UIView" destination="Gdl-Kw-GQ0" id="17g-UA-Aft"/>
+                        <outlet property="cSlider" destination="ATv-3z-egy" id="9EH-l5-peI"/>
+                        <outlet property="hSlider" destination="34b-S4-bKk" id="0uD-tT-Wwm"/>
+                        <outlet property="valueTextField" destination="YJT-eh-fw5" id="md2-m6-NiC"/>
+                        <outlet property="varName" destination="bx2-32-BqT" id="uJU-vW-02h"/>
+                    </connections>
+                </viewController>
+                <customObject id="z3O-Ep-pj7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22.5" y="-41.5"/>
+        </scene>
+    </scenes>
+</document>

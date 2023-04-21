@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController storyboardIdentifier="CustomCurvesAttributesView" id="bU7-R8-ocO" sceneMemberID="viewController">
+                    <view key="view" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="578" height="621"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="nQC-As-DQA">
+                                <rect key="frame" x="0.0" y="560" width="578" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="dUY-f8-PHk"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" title="Custom Curve" drawsBackground="YES" id="fAi-kM-7eP">
+                                    <font key="font" metaFont="system" size="48"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="tOy-S4-hL0" id="zQF-L3-XQe"/>
+                                </connections>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h0f-zd-Wdf">
+                                <rect key="frame" x="13" y="514" width="214" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="YiA-8M-hHT"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Linear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OOS-CG-MW5">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="add:" target="YXj-wf-VqH" id="Avj-fv-yBw"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wUa-5C-ni3">
+                                <rect key="frame" x="351" y="514" width="214" height="32"/>
+                                <buttonCell key="cell" type="push" title="Non-Linear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GHK-YE-Nyx">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="add:" target="YXj-wf-VqH" id="2lL-1v-blv"/>
+                                </connections>
+                            </button>
+                            <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-Kj-Tt9">
+                                <rect key="frame" x="0.0" y="0.0" width="578" height="501"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" id="Mtb-Ji-Yvv">
+                                    <rect key="frame" x="1" y="1" width="561" height="484"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view id="ZoB-UJ-CGq">
+                                            <rect key="frame" x="0.0" y="0.0" width="546" height="469"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F32-ZG-zch">
+                                                    <rect key="frame" x="0.0" y="0.0" width="546" height="469"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </stackView>
+                                            </subviews>
+                                        </view>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="M0Y-GF-zCE">
+                                    <rect key="frame" x="1" y="485" width="561" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="0T5-TH-t3R">
+                                    <rect key="frame" x="562" y="1" width="15" height="484"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nQC-As-DQA" firstAttribute="top" secondItem="tOy-S4-hL0" secondAttribute="top" id="HkO-A3-ccL"/>
+                            <constraint firstItem="wUa-5C-ni3" firstAttribute="top" secondItem="nQC-As-DQA" secondAttribute="bottom" constant="19" id="SSl-Kd-tNj"/>
+                            <constraint firstItem="wUa-5C-ni3" firstAttribute="leading" secondItem="h0f-zd-Wdf" secondAttribute="trailing" constant="138" id="YWr-uS-O5P"/>
+                            <constraint firstItem="h0f-zd-Wdf" firstAttribute="top" secondItem="nQC-As-DQA" secondAttribute="bottom" constant="19" id="erK-ID-eNy"/>
+                            <constraint firstItem="h0f-zd-Wdf" firstAttribute="leading" secondItem="tOy-S4-hL0" secondAttribute="leading" constant="20" symbolic="YES" id="g1h-Ej-eFF"/>
+                            <constraint firstAttribute="trailing" secondItem="wUa-5C-ni3" secondAttribute="trailing" constant="20" symbolic="YES" id="iM1-AG-C4t"/>
+                            <constraint firstItem="h0f-zd-Wdf" firstAttribute="baseline" secondItem="wUa-5C-ni3" secondAttribute="baseline" id="otj-Lp-q1B"/>
+                            <constraint firstAttribute="trailing" secondItem="nQC-As-DQA" secondAttribute="trailing" id="sUe-4m-8la"/>
+                            <constraint firstItem="nQC-As-DQA" firstAttribute="leading" secondItem="tOy-S4-hL0" secondAttribute="leading" id="twh-wC-ZDd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController id="YXj-wf-VqH">
+                    <connections>
+                        <outlet property="content" destination="ZoB-UJ-CGq" id="wwH-cD-ZbP"/>
+                    </connections>
+                </arrayController>
+            </objects>
+            <point key="canvasLocation" x="31" y="125.5"/>
+        </scene>
+    </scenes>
+</document>

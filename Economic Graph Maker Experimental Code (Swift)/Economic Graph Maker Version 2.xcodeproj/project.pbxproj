@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF1C6CC1284EF61900762E8E /* BidirectionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C6CC0284EF61900762E8E /* BidirectionDictionary.swift */; };
+		DF290E862848C4CC00D2293D /* AdvancedOptionsCheckboxUIComponent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF290E852848C4CC00D2293D /* AdvancedOptionsCheckboxUIComponent.storyboard */; };
+		DF290E882848C6BC00D2293D /* AttributesStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF290E872848C6BC00D2293D /* AttributesStackView.swift */; };
+		DF290E8A2848D4DA00D2293D /* CheckboxUIComponent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF290E892848D4DA00D2293D /* CheckboxUIComponent.storyboard */; };
+		DF290E8C2848D7BA00D2293D /* SliderUIComponent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF290E8B2848D7BA00D2293D /* SliderUIComponent.storyboard */; };
+		DF290E8E2848E7B000D2293D /* SliderWithCircularSliderUIComponent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF290E8D2848E7B000D2293D /* SliderWithCircularSliderUIComponent.storyboard */; };
+		DF290E922848EA1200D2293D /* AdvancedOptionsCheckboxUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF290E912848EA1200D2293D /* AdvancedOptionsCheckboxUIComponent.swift */; };
+		DF290E942848EBC700D2293D /* CheckboxUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF290E932848EBC700D2293D /* CheckboxUIComponent.swift */; };
+		DF290E962848ECFA00D2293D /* SliderUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF290E952848ECFA00D2293D /* SliderUIComponent.swift */; };
+		DF290E982848F0AA00D2293D /* SliderWithCircularSliderUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF290E972848F0AA00D2293D /* SliderWithCircularSliderUIComponent.swift */; };
+		DF3B52CC2856CE4400C885BF /* GraphEnvironmentViewControllerTextViewSizeHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3B52CB2856CE4400C885BF /* GraphEnvironmentViewControllerTextViewSizeHandling.swift */; };
+		DF5E7E92283B668900131F81 /* TemplateAttributesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5E7E91283B668900131F81 /* TemplateAttributesView.storyboard */; };
+		DF5E8066283B46C800B42522 /* GraphTemplateEditorEnvironment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5E8065283B46C800B42522 /* GraphTemplateEditorEnvironment.storyboard */; };
+		DF5E8068283B5B6000B42522 /* CustomCurvesAttributesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5E8067283B5B6000B42522 /* CustomCurvesAttributesView.storyboard */; };
+		DF5F0665283FB6E500451161 /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DF5F0664283FB6E500451161 /* File.rtf */; };
+		DF7FE9D12832345E00708ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9D02832345E00708ECE /* AppDelegate.swift */; };
+		DF7FE9D32832345E00708ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9D22832345E00708ECE /* ViewController.swift */; };
+		DF7FE9D62832345E00708ECE /* Economic_Graph_Maker_Version_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9D42832345E00708ECE /* Economic_Graph_Maker_Version_2.xcdatamodeld */; };
+		DF7FE9D82832346000708ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7FE9D72832346000708ECE /* Assets.xcassets */; };
+		DF7FE9DB2832346000708ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7FE9D92832346000708ECE /* Main.storyboard */; };
+		DF7FE9FF2832350F00708ECE /* DrawingMouseDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9E42832350E00708ECE /* DrawingMouseDown.swift */; };
+		DF7FEA002832350F00708ECE /* UserInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9E52832350E00708ECE /* UserInteraction.swift */; };
+		DF7FEA052832350F00708ECE /* GraphEnvironmentWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9EC2832350E00708ECE /* GraphEnvironmentWindowController.swift */; };
+		DF7FEA082832350F00708ECE /* GraphToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9F32832350E00708ECE /* GraphToolbar.swift */; };
+		DF7FEA092832350F00708ECE /* GraphEnvironmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9F42832350E00708ECE /* GraphEnvironmentViewController.swift */; };
+		DF7FEA0A2832350F00708ECE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9F52832350E00708ECE /* GraphView.swift */; };
+		DF7FEA0C2832350F00708ECE /* GraphEnvironment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7FE9F72832350E00708ECE /* GraphEnvironment.storyboard */; };
+		DF7FEA0D2832350F00708ECE /* PenDrawObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9F92832350E00708ECE /* PenDrawObject.swift */; };
+		DF7FEA0E2832350F00708ECE /* CurvedLineObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9FA2832350E00708ECE /* CurvedLineObject.swift */; };
+		DF7FEA0F2832350F00708ECE /* GraphObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9FB2832350E00708ECE /* GraphObject.swift */; };
+		DF7FEA102832350F00708ECE /* GraphObjectsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9FC2832350E00708ECE /* GraphObjectsClass.swift */; };
+		DF7FEA112832350F00708ECE /* StraightLineObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9FD2832350E00708ECE /* StraightLineObject.swift */; };
+		DF7FEA122832350F00708ECE /* TextObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7FE9FE2832350E00708ECE /* TextObject.swift */; };
+		DFACFB822846520D00D8917F /* XML Example.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DFACFB812846520D00D8917F /* XML Example.rtf */; };
+		DFACFB842847AAD900D8917F /* File.json in Resources */ = {isa = PBXBuildFile; fileRef = DFACFB832847AAD800D8917F /* File.json */; };
+		DFACFB872847B79100D8917F /* JSONToSwiftStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACFB862847B79100D8917F /* JSONToSwiftStructs.swift */; };
+		DFD7DA06284232E5007E3E6B /* GraphViewObjectDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7DA05284232E5007E3E6B /* GraphViewObjectDrawing.swift */; };
+		DFD7DA08284279C5007E3E6B /* TemplateAttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7DA07284279C5007E3E6B /* TemplateAttributesView.swift */; };
+		DFD854D528434404005F18F6 /* GraphTemplateEditorEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD854D428434404005F18F6 /* GraphTemplateEditorEnvironment.swift */; };
+		DFDAF5AD2843859800F1A3B4 /* CustomCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDAF5AC2843859800F1A3B4 /* CustomCurve.swift */; };
+		DFDAF5B12843BCED00F1A3B4 /* MultiCurveCustomCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDAF5B02843BCEC00F1A3B4 /* MultiCurveCustomCurve.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF1C6CC0284EF61900762E8E /* BidirectionDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionDictionary.swift; sourceTree = "<group>"; };
+		DF290E852848C4CC00D2293D /* AdvancedOptionsCheckboxUIComponent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdvancedOptionsCheckboxUIComponent.storyboard; sourceTree = "<group>"; };
+		DF290E872848C6BC00D2293D /* AttributesStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesStackView.swift; sourceTree = "<group>"; };
+		DF290E892848D4DA00D2293D /* CheckboxUIComponent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckboxUIComponent.storyboard; sourceTree = "<group>"; };
+		DF290E8B2848D7BA00D2293D /* SliderUIComponent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SliderUIComponent.storyboard; sourceTree = "<group>"; };
+		DF290E8D2848E7B000D2293D /* SliderWithCircularSliderUIComponent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SliderWithCircularSliderUIComponent.storyboard; sourceTree = "<group>"; };
+		DF290E912848EA1200D2293D /* AdvancedOptionsCheckboxUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedOptionsCheckboxUIComponent.swift; sourceTree = "<group>"; };
+		DF290E932848EBC700D2293D /* CheckboxUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxUIComponent.swift; sourceTree = "<group>"; };
+		DF290E952848ECFA00D2293D /* SliderUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderUIComponent.swift; sourceTree = "<group>"; };
+		DF290E972848F0AA00D2293D /* SliderWithCircularSliderUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderWithCircularSliderUIComponent.swift; sourceTree = "<group>"; };
+		DF3B52CB2856CE4400C885BF /* GraphEnvironmentViewControllerTextViewSizeHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphEnvironmentViewControllerTextViewSizeHandling.swift; sourceTree = "<group>"; };
+		DF5E7E91283B668900131F81 /* TemplateAttributesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TemplateAttributesView.storyboard; sourceTree = "<group>"; };
+		DF5E8065283B46C800B42522 /* GraphTemplateEditorEnvironment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GraphTemplateEditorEnvironment.storyboard; sourceTree = "<group>"; };
+		DF5E8067283B5B6000B42522 /* CustomCurvesAttributesView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomCurvesAttributesView.storyboard; sourceTree = "<group>"; };
+		DF5F0664283FB6E500451161 /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
+		DF60A8172854E0FD00CDFB68 /* Economic-Graph-Maker-Version-2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Economic-Graph-Maker-Version-2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DF7FE9CD2832345E00708ECE /* Economic Graph Maker Version 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Economic Graph Maker Version 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7FE9D02832345E00708ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF7FE9D22832345E00708ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF7FE9D52832345E00708ECE /* Economic_Graph_Maker_Version_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Economic_Graph_Maker_Version_2.xcdatamodel; sourceTree = "<group>"; };
+		DF7FE9D72832346000708ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF7FE9DA2832346000708ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF7FE9DC2832346000708ECE /* Economic_Graph_Maker_Version_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Economic_Graph_Maker_Version_2.entitlements; sourceTree = "<group>"; };
+		DF7FE9E42832350E00708ECE /* DrawingMouseDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingMouseDown.swift; sourceTree = "<group>"; };
+		DF7FE9E52832350E00708ECE /* UserInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteraction.swift; sourceTree = "<group>"; };
+		DF7FE9EC2832350E00708ECE /* GraphEnvironmentWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphEnvironmentWindowController.swift; sourceTree = "<group>"; };
+		DF7FE9F32832350E00708ECE /* GraphToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphToolbar.swift; sourceTree = "<group>"; };
+		DF7FE9F42832350E00708ECE /* GraphEnvironmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphEnvironmentViewController.swift; sourceTree = "<group>"; };
+		DF7FE9F52832350E00708ECE /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		DF7FE9F72832350E00708ECE /* GraphEnvironment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GraphEnvironment.storyboard; sourceTree = "<group>"; };
+		DF7FE9F92832350E00708ECE /* PenDrawObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenDrawObject.swift; sourceTree = "<group>"; };
+		DF7FE9FA2832350E00708ECE /* CurvedLineObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedLineObject.swift; sourceTree = "<group>"; };
+		DF7FE9FB2832350E00708ECE /* GraphObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphObject.swift; sourceTree = "<group>"; };
+		DF7FE9FC2832350E00708ECE /* GraphObjectsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphObjectsClass.swift; sourceTree = "<group>"; };
+		DF7FE9FD2832350E00708ECE /* StraightLineObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StraightLineObject.swift; sourceTree = "<group>"; };
+		DF7FE9FE2832350E00708ECE /* TextObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextObject.swift; sourceTree = "<group>"; };
+		DFACFB812846520D00D8917F /* XML Example.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "XML Example.rtf"; sourceTree = "<group>"; };
+		DFACFB832847AAD800D8917F /* File.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = File.json; sourceTree = "<group>"; };
+		DFACFB862847B79100D8917F /* JSONToSwiftStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONToSwiftStructs.swift; sourceTree = "<group>"; };
+		DFD7DA05284232E5007E3E6B /* GraphViewObjectDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewObjectDrawing.swift; sourceTree = "<group>"; };
+		DFD7DA07284279C5007E3E6B /* TemplateAttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAttributesView.swift; sourceTree = "<group>"; };
+		DFD854D428434404005F18F6 /* GraphTemplateEditorEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTemplateEditorEnvironment.swift; sourceTree = "<group>"; };
+		DFDAF5AC2843859800F1A3B4 /* CustomCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurve.swift; sourceTree = "<group>"; };
+		DFDAF5B02843BCEC00F1A3B4 /* MultiCurveCustomCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCurveCustomCurve.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF7FE9CA2832345E00708ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF4D94B02851F14B0001B849 /* GraphObjectSettingsPanes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GraphObjectSettingsPanes;
+			sourceTree = "<group>";
+		};
+		DF5E7E93283B689300131F81 /* GraphTemplateElements */ = {
+			isa = PBXGroup;
+			children = (
+				DFD2C43628792E9B005DDCEA /* AdvancedOptionsCheckboxUIComponent */,
+				DFD2C43728792EB8005DDCEA /* CheckboxUIComponent */,
+				DFD2C43828792ED1005DDCEA /* SliderUIComponent */,
+				DFD2C43928792F03005DDCEA /* SliderWithCircularSliderUIComponent */,
+			);
+			path = GraphTemplateElements;
+			sourceTree = "<group>";
+		};
+		DF5E8064283B467100B42522 /* GraphTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				DFD2C43528792E7E005DDCEA /* TemplateAttributes */,
+				DFD2C43428792E63005DDCEA /* GraphTemplateEditor */,
+				DF290E872848C6BC00D2293D /* AttributesStackView.swift */,
+				DF5E7E93283B689300131F81 /* GraphTemplateElements */,
+				DF5E8067283B5B6000B42522 /* CustomCurvesAttributesView.storyboard */,
+			);
+			path = GraphTemplate;
+			sourceTree = "<group>";
+		};
+		DF7FE9C42832345E00708ECE = {
+			isa = PBXGroup;
+			children = (
+				DF7FE9CF2832345E00708ECE /* Economic Graph Maker Version 2 */,
+				DFACFB832847AAD800D8917F /* File.json */,
+				DF5F0664283FB6E500451161 /* File.rtf */,
+				DFACFB812846520D00D8917F /* XML Example.rtf */,
+				DF1C6CC0284EF61900762E8E /* BidirectionDictionary.swift */,
+				DFACFB862847B79100D8917F /* JSONToSwiftStructs.swift */,
+				DF7FE9F22832350E00708ECE /* GraphEnvironment */,
+				DF7FE9F82832350E00708ECE /* GraphObjectFiles */,
+				DF5E8064283B467100B42522 /* GraphTemplate */,
+				DF7FE9CE2832345E00708ECE /* Products */,
+				DF7FE9E22832350E00708ECE /* toolbarItemClasses */,
+				DF7FE9EB2832350E00708ECE /* UI */,
+				DF7FE9E32832350E00708ECE /* UserInteractionFiles */,
+			);
+			sourceTree = "<group>";
+		};
+		DF7FE9CE2832345E00708ECE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF7FE9CD2832345E00708ECE /* Economic Graph Maker Version 2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF7FE9CF2832345E00708ECE /* Economic Graph Maker Version 2 */ = {
+			isa = PBXGroup;
+			children = (
+				DF60A8172854E0FD00CDFB68 /* Economic-Graph-Maker-Version-2-Info.plist */,
+				DF7FE9D02832345E00708ECE /* AppDelegate.swift */,
+				DF7FE9DC2832346000708ECE /* Economic_Graph_Maker_Version_2.entitlements */,
+				DF7FE9D42832345E00708ECE /* Economic_Graph_Maker_Version_2.xcdatamodeld */,
+			);
+			path = "Economic Graph Maker Version 2";
+			sourceTree = "<group>";
+		};
+		DF7FE9E22832350E00708ECE /* toolbarItemClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = toolbarItemClasses;
+			sourceTree = "<group>";
+		};
+		DF7FE9E32832350E00708ECE /* UserInteractionFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DF7FE9E42832350E00708ECE /* DrawingMouseDown.swift */,
+				DF7FE9E52832350E00708ECE /* UserInteraction.swift */,
+			);
+			path = UserInteractionFiles;
+			sourceTree = "<group>";
+		};
+		DF7FE9EB2832350E00708ECE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DF7FE9D72832346000708ECE /* Assets.xcassets */,
+				DF7FE9D92832346000708ECE /* Main.storyboard */,
+				DF7FE9D22832345E00708ECE /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DF7FE9F22832350E00708ECE /* GraphEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				DF7FE9F32832350E00708ECE /* GraphToolbar.swift */,
+				DF7FE9F42832350E00708ECE /* GraphEnvironmentViewController.swift */,
+				DF7FE9EC2832350E00708ECE /* GraphEnvironmentWindowController.swift */,
+				DF7FE9F52832350E00708ECE /* GraphView.swift */,
+				DF7FE9F72832350E00708ECE /* GraphEnvironment.storyboard */,
+				DFD7DA05284232E5007E3E6B /* GraphViewObjectDrawing.swift */,
+				DF3B52CB2856CE4400C885BF /* GraphEnvironmentViewControllerTextViewSizeHandling.swift */,
+			);
+			path = GraphEnvironment;
+			sourceTree = "<group>";
+		};
+		DF7FE9F82832350E00708ECE /* GraphObjectFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DF4D94B02851F14B0001B849 /* GraphObjectSettingsPanes */,
+				DFDAF5AB2843856900F1A3B4 /* CustomCurveFiles */,
+				DF7FE9F92832350E00708ECE /* PenDrawObject.swift */,
+				DF7FE9FA2832350E00708ECE /* CurvedLineObject.swift */,
+				DF7FE9FB2832350E00708ECE /* GraphObject.swift */,
+				DF7FE9FC2832350E00708ECE /* GraphObjectsClass.swift */,
+				DF7FE9FD2832350E00708ECE /* StraightLineObject.swift */,
+				DF7FE9FE2832350E00708ECE /* TextObject.swift */,
+			);
+			path = GraphObjectFiles;
+			sourceTree = "<group>";
+		};
+		DFD2C43428792E63005DDCEA /* GraphTemplateEditor */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E8065283B46C800B42522 /* GraphTemplateEditorEnvironment.storyboard */,
+				DFD854D428434404005F18F6 /* GraphTemplateEditorEnvironment.swift */,
+			);
+			path = GraphTemplateEditor;
+			sourceTree = "<group>";
+		};
+		DFD2C43528792E7E005DDCEA /* TemplateAttributes */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E7E91283B668900131F81 /* TemplateAttributesView.storyboard */,
+				DFD7DA07284279C5007E3E6B /* TemplateAttributesView.swift */,
+			);
+			path = TemplateAttributes;
+			sourceTree = "<group>";
+		};
+		DFD2C43628792E9B005DDCEA /* AdvancedOptionsCheckboxUIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				DF290E852848C4CC00D2293D /* AdvancedOptionsCheckboxUIComponent.storyboard */,
+				DF290E912848EA1200D2293D /* AdvancedOptionsCheckboxUIComponent.swift */,
+			);
+			path = AdvancedOptionsCheckboxUIComponent;
+			sourceTree = "<group>";
+		};
+		DFD2C43728792EB8005DDCEA /* CheckboxUIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				DF290E892848D4DA00D2293D /* CheckboxUIComponent.storyboard */,
+				DF290E932848EBC700D2293D /* CheckboxUIComponent.swift */,
+			);
+			path = CheckboxUIComponent;
+			sourceTree = "<group>";
+		};
+		DFD2C43828792ED1005DDCEA /* SliderUIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				DF290E8B2848D7BA00D2293D /* SliderUIComponent.storyboard */,
+				DF290E952848ECFA00D2293D /* SliderUIComponent.swift */,
+			);
+			path = SliderUIComponent;
+			sourceTree = "<group>";
+		};
+		DFD2C43928792F03005DDCEA /* SliderWithCircularSliderUIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				DF290E8D2848E7B000D2293D /* SliderWithCircularSliderUIComponent.storyboard */,
+				DF290E972848F0AA00D2293D /* SliderWithCircularSliderUIComponent.swift */,
+			);
+			path = SliderWithCircularSliderUIComponent;
+			sourceTree = "<group>";
+		};
+		DFDAF5AB2843856900F1A3B4 /* CustomCurveFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DFDAF5AC2843859800F1A3B4 /* CustomCurve.swift */,
+				DFDAF5B02843BCEC00F1A3B4 /* MultiCurveCustomCurve.swift */,
+			);
+			path = CustomCurveFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF7FE9CC2832345E00708ECE /* Economic Graph Maker Version 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7FE9DF2832346000708ECE /* Build configuration list for PBXNativeTarget "Economic Graph Maker Version 2" */;
+			buildPhases = (
+				DF7FE9C92832345E00708ECE /* Sources */,
+				DF7FE9CA2832345E00708ECE /* Frameworks */,
+				DF7FE9CB2832345E00708ECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Economic Graph Maker Version 2";
+			productName = "Economic Graph Maker Version 2";
+			productReference = DF7FE9CD2832345E00708ECE /* Economic Graph Maker Version 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF7FE9C52832345E00708ECE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					DF7FE9CC2832345E00708ECE = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = DF7FE9C82832345E00708ECE /* Build configuration list for PBXProject "Economic Graph Maker Version 2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF7FE9C42832345E00708ECE;
+			productRefGroup = DF7FE9CE2832345E00708ECE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF7FE9CC2832345E00708ECE /* Economic Graph Maker Version 2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF7FE9CB2832345E00708ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5E8068283B5B6000B42522 /* CustomCurvesAttributesView.storyboard in Resources */,
+				DF7FEA0C2832350F00708ECE /* GraphEnvironment.storyboard in Resources */,
+				DF5F0665283FB6E500451161 /* File.rtf in Resources */,
+				DF290E862848C4CC00D2293D /* AdvancedOptionsCheckboxUIComponent.storyboard in Resources */,
+				DF5E7E92283B668900131F81 /* TemplateAttributesView.storyboard in Resources */,
+				DF7FE9D82832346000708ECE /* Assets.xcassets in Resources */,
+				DF5E8066283B46C800B42522 /* GraphTemplateEditorEnvironment.storyboard in Resources */,
+				DF290E8E2848E7B000D2293D /* SliderWithCircularSliderUIComponent.storyboard in Resources */,
+				DF7FE9DB2832346000708ECE /* Main.storyboard in Resources */,
+				DF290E8A2848D4DA00D2293D /* CheckboxUIComponent.storyboard in Resources */,
+				DFACFB822846520D00D8917F /* XML Example.rtf in Resources */,
+				DFACFB842847AAD900D8917F /* File.json in Resources */,
+				DF290E8C2848D7BA00D2293D /* SliderUIComponent.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF7FE9C92832345E00708ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD7DA08284279C5007E3E6B /* TemplateAttributesView.swift in Sources */,
+				DF7FE9D32832345E00708ECE /* ViewController.swift in Sources */,
+				DF3B52CC2856CE4400C885BF /* GraphEnvironmentViewControllerTextViewSizeHandling.swift in Sources */,
+				DF7FEA052832350F00708ECE /* GraphEnvironmentWindowController.swift in Sources */,
+				DF7FEA0A2832350F00708ECE /* GraphView.swift in Sources */,
+				DF7FEA112832350F00708ECE /* StraightLineObject.swift in Sources */,
+				DF7FE9D62832345E00708ECE /* Economic_Graph_Maker_Version_2.xcdatamodeld in Sources */,
+				DF7FEA0D2832350F00708ECE /* PenDrawObject.swift in Sources */,
+				DF7FEA0E2832350F00708ECE /* CurvedLineObject.swift in Sources */,
+				DF290E922848EA1200D2293D /* AdvancedOptionsCheckboxUIComponent.swift in Sources */,
+				DF7FEA122832350F00708ECE /* TextObject.swift in Sources */,
+				DF290E982848F0AA00D2293D /* SliderWithCircularSliderUIComponent.swift in Sources */,
+				DF290E962848ECFA00D2293D /* SliderUIComponent.swift in Sources */,
+				DF7FE9FF2832350F00708ECE /* DrawingMouseDown.swift in Sources */,
+				DFDAF5AD2843859800F1A3B4 /* CustomCurve.swift in Sources */,
+				DF7FEA0F2832350F00708ECE /* GraphObject.swift in Sources */,
+				DFDAF5B12843BCED00F1A3B4 /* MultiCurveCustomCurve.swift in Sources */,
+				DF7FEA082832350F00708ECE /* GraphToolbar.swift in Sources */,
+				DF7FEA102832350F00708ECE /* GraphObjectsClass.swift in Sources */,
+				DF290E942848EBC700D2293D /* CheckboxUIComponent.swift in Sources */,
+				DF290E882848C6BC00D2293D /* AttributesStackView.swift in Sources */,
+				DF7FEA092832350F00708ECE /* GraphEnvironmentViewController.swift in Sources */,
+				DFD854D528434404005F18F6 /* GraphTemplateEditorEnvironment.swift in Sources */,
+				DF1C6CC1284EF61900762E8E /* BidirectionDictionary.swift in Sources */,
+				DF7FE9D12832345E00708ECE /* AppDelegate.swift in Sources */,
+				DF7FEA002832350F00708ECE /* UserInteraction.swift in Sources */,
+				DFACFB872847B79100D8917F /* JSONToSwiftStructs.swift in Sources */,
+				DFD7DA06284232E5007E3E6B /* GraphViewObjectDrawing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF7FE9D92832346000708ECE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF7FE9DA2832346000708ECE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF7FE9DD2832346000708ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF7FE9DE2832346000708ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DF7FE9E02832346000708ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Economic Graph Maker Version 2/Economic_Graph_Maker_Version_2.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Economic-Graph-Maker-Version-2-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aidanliaw.Economic-Graph-Maker-Version-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DF7FE9E12832346000708ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Economic Graph Maker Version 2/Economic_Graph_Maker_Version_2.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Economic-Graph-Maker-Version-2-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aidanliaw.Economic-Graph-Maker-Version-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF7FE9C82832345E00708ECE /* Build configuration list for PBXProject "Economic Graph Maker Version 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7FE9DD2832346000708ECE /* Debug */,
+				DF7FE9DE2832346000708ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7FE9DF2832346000708ECE /* Build configuration list for PBXNativeTarget "Economic Graph Maker Version 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7FE9E02832346000708ECE /* Debug */,
+				DF7FE9E12832346000708ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF7FE9D42832345E00708ECE /* Economic_Graph_Maker_Version_2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF7FE9D52832345E00708ECE /* Economic_Graph_Maker_Version_2.xcdatamodel */,
+			);
+			currentVersion = DF7FE9D52832345E00708ECE /* Economic_Graph_Maker_Version_2.xcdatamodel */;
+			path = Economic_Graph_Maker_Version_2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DF7FE9C52832345E00708ECE /* Project object */;
+}

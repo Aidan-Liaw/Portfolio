@@ -1,0 +1,16 @@
+{
+	"DOCTYPE" : "graphPreset",
+	"presets" : [
+		{
+			"name" : "Demand",
+			"equation" : "Q = a - bP",
+			"constants" : {
+				"a" : 100,
+				"b" : 1
+				},
+			"isX" : "P",
+			"isY" : "Q"
+		}
+	]
+}
+

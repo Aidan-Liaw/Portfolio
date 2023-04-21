@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="oxE-oc-SsT">
+            <objects>
+                <windowController storyboardIdentifier="GraphTemplateEditorEnvironment" id="uDb-ns-LbX" sceneMemberID="viewController">
+                    <window key="window" title="Graph Template Editor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="MlB-Ri-Yuh">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <view key="contentView" id="9oY-vc-NvH">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="uDb-ns-LbX" id="5lh-vb-F1U"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="fdW-Ix-keR" kind="relationship" relationship="window.shadowedContentViewController" id="B2n-lD-pbA"/>
+                    </connections>
+                </windowController>
+                <customObject id="SEi-ML-8lW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73" y="-735"/>
+        </scene>
+        <!--Graph Template Editor Environment-->
+        <scene sceneID="Ekg-LY-JUY">
+            <objects>
+                <viewController id="fdW-Ix-keR" customClass="GraphTemplateEditorEnvironment" customModule="Economic_Graph_Maker_Version_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="WbD-O9-Qfs">
+                        <rect key="frame" x="0.0" y="0.0" width="1332" height="663"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-Aa-oX4">
+                                <rect key="frame" x="0.0" y="0.0" width="754" height="663"/>
+                                <clipView key="contentView" drawsBackground="NO" id="nBX-Lf-3Sb">
+                                    <rect key="frame" x="0.0" y="0.0" width="739" height="663"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" allowsUndo="YES" spellingCorrection="YES" smartInsertDelete="YES" id="YH5-ef-S2e">
+                                            <rect key="frame" x="0.0" y="0.0" width="739" height="663"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="739" height="663"/>
+                                            <size key="maxSize" width="754" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="mBU-sK-b3i">
+                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="AaR-Eh-Q44">
+                                    <rect key="frame" x="739" y="0.0" width="15" height="663"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="1Og-Iz-57h">
+                                <rect key="frame" x="754" y="0.0" width="578" height="663"/>
+                                <connections>
+                                    <segue destination="xWo-t4-sKh" kind="embed" id="vS6-ze-NJ5"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1Og-Iz-57h" firstAttribute="leading" secondItem="WbD-O9-Qfs" secondAttribute="leading" constant="754" id="E7e-b0-tEb"/>
+                            <constraint firstItem="1Og-Iz-57h" firstAttribute="top" secondItem="jYm-Aa-oX4" secondAttribute="top" id="G1I-ev-QnF"/>
+                            <constraint firstItem="1Og-Iz-57h" firstAttribute="leading" secondItem="YH5-ef-S2e" secondAttribute="trailing" constant="15" id="Jo8-a4-BoW"/>
+                            <constraint firstItem="1Og-Iz-57h" firstAttribute="bottom" secondItem="jYm-Aa-oX4" secondAttribute="bottom" id="KzX-Rs-E7V"/>
+                            <constraint firstItem="jYm-Aa-oX4" firstAttribute="leading" secondItem="WbD-O9-Qfs" secondAttribute="leading" id="LzF-jD-lcn"/>
+                            <constraint firstItem="1Og-Iz-57h" firstAttribute="top" secondItem="WbD-O9-Qfs" secondAttribute="top" id="M5r-Op-JYf"/>
+                            <constraint firstAttribute="bottom" secondItem="1Og-Iz-57h" secondAttribute="bottom" id="QP1-JP-Nks"/>
+                            <constraint firstItem="1Og-Iz-57h" firstAttribute="leading" secondItem="jYm-Aa-oX4" secondAttribute="trailing" id="gfl-8f-UN5"/>
+                            <constraint firstAttribute="trailing" secondItem="1Og-Iz-57h" secondAttribute="trailing" id="yo9-vL-YwZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GraphTemplateEditorEnvironmentView" destination="WbD-O9-Qfs" id="oqB-9q-IW3"/>
+                        <outlet property="XMLEditorTextView" destination="YH5-ef-S2e" id="dV8-RW-c0l"/>
+                        <outlet property="settingPaneView" destination="1Og-Iz-57h" id="G3i-tm-9RF"/>
+                        <outlet property="test" destination="WbD-O9-Qfs" id="fIv-5J-k0m"/>
+                    </connections>
+                </viewController>
+                <customObject id="ruj-62-Z5N" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="-100.5"/>
+        </scene>
+        <!--TemplateAttributesView-->
+        <scene sceneID="TmO-QT-S8h">
+            <objects>
+                <controllerPlaceholder storyboardName="TemplateAttributesView" referencedIdentifier="TemplateAttributesView" id="xWo-t4-sKh" sceneMemberID="viewController"/>
+                <customObject id="5W4-1F-W8I" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-372"/>
+        </scene>
+    </scenes>
+</document>
