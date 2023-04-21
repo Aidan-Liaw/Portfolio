@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="giU-zM-uv9">
+            <objects>
+                <windowController storyboardIdentifier="GraphEnvironment" id="1e8-qi-Rso" sceneMemberID="viewController">
+                    <window key="window" title="Graph Editor" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="3lx-lg-DDy">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="249" width="742" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <view key="contentView" id="wLy-E6-R2P">
+                            <rect key="frame" x="0.0" y="0.0" width="742" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <toolbar key="toolbar" implicitIdentifier="681BAA56-21E8-4924-8309-4F348C13AB92" explicitIdentifier="graphToolbar" autosavesConfiguration="NO" displayMode="labelOnly" sizeMode="regular" id="kBu-dM-bxl" customClass="GraphToolbar" customModule="Economic_Graph_Maker_Version_2" customModuleProvider="target">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="fjG-Wu-wVK"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="zzQ-dq-CTl"/>
+                                <toolbarItem implicitItemIdentifier="D205E134-3E6F-46FC-94F7-5BD9EEDC5EAF" explicitItemIdentifier="penDrawItem" label="Pen Draw" paletteLabel="Pen Draw" tag="-1" bordered="YES" id="xTr-d5-sdC">
+                                    <size key="minSize" width="24" height="25"/>
+                                    <size key="maxSize" width="24" height="25"/>
+                                    <connections>
+                                        <action selector="penDrawActionWith_sender:" target="kBu-dM-bxl" id="LQR-VA-6yg"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="C9634479-7C38-4F6B-AC31-661C990D11F4" explicitItemIdentifier="straightLineItem" label="Straight Line" paletteLabel="Straight Line" tag="-1" bordered="YES" id="r2X-Eb-MZs">
+                                    <size key="minSize" width="24" height="25"/>
+                                    <size key="maxSize" width="24" height="25"/>
+                                    <connections>
+                                        <action selector="straightLineActionWith_sender:" target="kBu-dM-bxl" id="9WO-XB-iwg"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="84F005DF-52A7-4E88-9954-7A5C935A8E9F" explicitItemIdentifier="curvedLineItem" label="Curved Line" paletteLabel="Curved Line" tag="-1" bordered="YES" id="kGU-fK-Mec">
+                                    <size key="minSize" width="24" height="25"/>
+                                    <size key="maxSize" width="24" height="25"/>
+                                    <connections>
+                                        <action selector="curvedLineActionWith_sender:" target="kBu-dM-bxl" id="Skx-1Z-KRD"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="01B06906-766F-4AD8-B7BF-81B937CF59DF" explicitItemIdentifier="textDrawItem" label="Text" paletteLabel="Text" tag="-1" bordered="YES" id="sHy-hs-JF1">
+                                    <size key="minSize" width="24" height="25"/>
+                                    <size key="maxSize" width="24" height="25"/>
+                                    <connections>
+                                        <action selector="textItemActionWith_sender:" target="kBu-dM-bxl" id="KYh-uy-Xuw"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="A1261D81-00B3-4D96-B813-3CCAFF408C9B" explicitItemIdentifier="deleteItem" label="Delete" paletteLabel="Delete" tag="-1" bordered="YES" id="I0h-Hq-UST" userLabel="Delete Item">
+                                    <size key="minSize" width="24" height="25"/>
+                                    <size key="maxSize" width="24" height="25"/>
+                                    <connections>
+                                        <action selector="deleteItemActionWith_sender:" target="kBu-dM-bxl" id="xb4-Za-Ggb"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="3A50A8E4-ED59-4566-B127-585D8005B3BF" explicitItemIdentifier="saveItem" label="Save" paletteLabel="Save" tag="-1" bordered="YES" id="j5U-ky-ZiJ">
+                                    <size key="minSize" width="24" height="25"/>
+                                    <size key="maxSize" width="24" height="25"/>
+                                    <connections>
+                                        <action selector="saveActionWith_sender:" target="kBu-dM-bxl" id="ZXL-Ra-wiO"/>
+                                    </connections>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="xTr-d5-sdC"/>
+                                <toolbarItem reference="r2X-Eb-MZs"/>
+                                <toolbarItem reference="kGU-fK-Mec"/>
+                                <toolbarItem reference="sHy-hs-JF1"/>
+                                <toolbarItem reference="I0h-Hq-UST"/>
+                                <toolbarItem reference="j5U-ky-ZiJ"/>
+                            </defaultToolbarItems>
+                            <connections>
+                                <outlet property="curvedLineItem" destination="kGU-fK-Mec" id="Vyn-91-Wkg"/>
+                                <outlet property="penDrawItem" destination="xTr-d5-sdC" id="F3W-1N-FO2"/>
+                                <outlet property="straightLineItem" destination="r2X-Eb-MZs" id="TjZ-gy-hdt"/>
+                                <outlet property="textItem" destination="sHy-hs-JF1" id="iG0-x7-GFQ"/>
+                            </connections>
+                        </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="1e8-qi-Rso" id="SSZ-ML-fF7"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="OH2-DK-Hfv" kind="relationship" relationship="window.shadowedContentViewController" id="zQm-4Q-0k3"/>
+                    </connections>
+                </windowController>
+                <customObject id="Yhw-7s-8mS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="-205"/>
+        </scene>
+        <!--Graph Environment View Controller-->
+        <scene sceneID="7Z4-dV-WvD">
+            <objects>
+                <viewController id="OH2-DK-Hfv" customClass="GraphEnvironmentViewController" customModule="Economic_Graph_Maker_Version_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="2yP-rQ-rPn">
+                        <rect key="frame" x="0.0" y="0.0" width="1138" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView identifier="graphView" appearanceType="aqua" id="APz-6m-wDL" customClass="GraphView" customModule="Economic_Graph_Maker_Version_2" customModuleProvider="target">
+                                <rect key="frame" x="319" y="50" width="500" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </customView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="graphView" destination="APz-6m-wDL" id="VXd-5E-XXb"/>
+                    </connections>
+                </viewController>
+                <customObject id="HTX-EI-RKe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="329.5"/>
+        </scene>
+    </scenes>
+</document>

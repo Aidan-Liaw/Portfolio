@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19162"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6"/>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Economic_Graph_Maker_Version_2" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Welcome!" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="mTJ-ND-0JV" kind="relationship" relationship="window.shadowedContentViewController" id="0cJ-PP-yNo"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XAn-6x-O5o">
+            <objects>
+                <viewController id="mTJ-ND-0JV" sceneMemberID="viewController">
+                    <view key="view" identifier="WelcomeView" id="wW1-Dr-4Nh">
+                        <rect key="frame" x="0.0" y="0.0" width="1200" height="700"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView identifier="AppLogo" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i9s-uz-SRb">
+                                <rect key="frame" x="120" y="320" width="260" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="Lj9-0B-lCJ"/>
+                                    <constraint firstAttribute="height" constant="260" id="qNA-qC-OfC"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" identifier="AppLogoImageCell" imageScaling="proportionallyDown" id="7JS-l2-wZV"/>
+                            </imageView>
+                            <textField identifier="TitleTextField" horizontalHuggingPriority="251" verticalHuggingPriority="750" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="bKh-kw-jzV">
+                                <rect key="frame" x="118" y="238" width="264" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Rln-l2-gQk"/>
+                                </constraints>
+                                <textFieldCell key="cell" alignment="center" identifier="TitleTextFieldCell" title="The Economics Graph Maker" id="S5f-Bj-KyM">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="S5f-Bj-KyM" id="3LH-XQ-cmt"/>
+                                </connections>
+                            </textField>
+                            <button identifier="NewGraphEnvironmentButton" horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3PO-0k-eVI">
+                                <rect key="frame" x="113" y="187" width="274" height="32"/>
+                                <buttonCell key="cell" type="push" title="New" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lDS-Px-cf8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="UJy-4G-JNs" kind="show" id="Vy0-O2-VK0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bKh-kw-jzV" firstAttribute="trailing" secondItem="i9s-uz-SRb" secondAttribute="trailing" id="3o0-HE-3rf"/>
+                            <constraint firstItem="i9s-uz-SRb" firstAttribute="leading" secondItem="wW1-Dr-4Nh" secondAttribute="leading" constant="120" id="Dz7-ot-zoF"/>
+                            <constraint firstItem="3PO-0k-eVI" firstAttribute="trailing" secondItem="bKh-kw-jzV" secondAttribute="trailing" id="Grm-d7-VB0"/>
+                            <constraint firstItem="bKh-kw-jzV" firstAttribute="leading" secondItem="i9s-uz-SRb" secondAttribute="leading" id="LMb-Ob-eSc"/>
+                            <constraint firstItem="3PO-0k-eVI" firstAttribute="leading" secondItem="bKh-kw-jzV" secondAttribute="leading" id="VI6-3w-gu0"/>
+                            <constraint firstItem="bKh-kw-jzV" firstAttribute="top" secondItem="i9s-uz-SRb" secondAttribute="bottom" constant="22" id="hC8-Po-ogD"/>
+                            <constraint firstItem="i9s-uz-SRb" firstAttribute="top" secondItem="wW1-Dr-4Nh" secondAttribute="top" constant="120" id="noQ-Ze-Jxl"/>
+                            <constraint firstItem="3PO-0k-eVI" firstAttribute="top" secondItem="bKh-kw-jzV" secondAttribute="bottom" constant="24" id="qnd-2A-CnR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AppLogo" destination="i9s-uz-SRb" id="gEt-g3-Hpe"/>
+                        <outlet property="NewButton" destination="3PO-0k-eVI" id="Tbs-3t-PbT"/>
+                        <outlet property="TitleTextField" destination="bKh-kw-jzV" id="Fir-Zh-MbL"/>
+                        <outlet property="TitleTextFieldCell" destination="S5f-Bj-KyM" id="Vgb-7U-6xx"/>
+                        <outlet property="WelcomeView" destination="wW1-Dr-4Nh" id="k4Z-hR-Egd"/>
+                    </connections>
+                </viewController>
+                <customObject id="rkr-OR-uob" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="826"/>
+        </scene>
+        <!--GraphEnvironment-->
+        <scene sceneID="PJv-h1-tjr">
+            <objects>
+                <customObject id="tdt-hP-jck" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <controllerPlaceholder storyboardName="GraphEnvironment" referencedIdentifier="GraphEnvironment" id="UJy-4G-JNs" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="1312"/>
+        </scene>
+    </scenes>
+</document>
