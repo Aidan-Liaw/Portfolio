@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 18 00:00:44 2023
+# Process ID: 37072
+# Current directory: C:/Users/aidan/csse4010_assesment_2/csse4010_assesment_2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/aidan/csse4010_assesment_2/csse4010_assesment_2.sim/sim_1/behav/xsim/xsim.dir/test_combinational_lock_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/aidan/csse4010_assesment_2/csse4010_assesment_2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/aidan/csse4010_assesment_2/csse4010_assesment_2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/aidan/csse4010_assesment_2/csse4010_assesment_2.sim/sim_1/behav/xsim/xsim.dir/test_combinational_lock_behav/webtalk/xsim_webtalk.tcl -notrace

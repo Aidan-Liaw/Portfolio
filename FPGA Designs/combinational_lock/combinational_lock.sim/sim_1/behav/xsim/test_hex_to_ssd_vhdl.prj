@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../csse4010_assesment_2.srcs/sources_1/new/hex_to_ssd.vhd" \
+"../../../../csse4010_assesment_2.srcs/sim_1/new/test_hex_to_ssd.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"test_combinational_lock_func_synth.vhd" \
+"../../../../../csse4010_assesment_2.srcs/sim_1/new/test_combinational_lock.vhd" \
+
+# Do not sort compile order
+nosort

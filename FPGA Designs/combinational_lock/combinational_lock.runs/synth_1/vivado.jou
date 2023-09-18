@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Aug 19 00:27:50 2023
+# Process ID: 1960
+# Current directory: C:/Users/aidan/csse4010_assesment_2/csse4010_assesment_2.runs/synth_1
+# Command line: vivado.exe -log combinational_lock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source combinational_lock.tcl
+# Log file: C:/Users/aidan/csse4010_assesment_2/csse4010_assesment_2.runs/synth_1/combinational_lock.vds
+# Journal file: C:/Users/aidan/csse4010_assesment_2/csse4010_assesment_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source combinational_lock.tcl -notrace

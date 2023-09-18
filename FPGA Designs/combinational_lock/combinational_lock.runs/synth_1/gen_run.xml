@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1692368867">
+  <File Type="PA-TCL" Name="combinational_lock.tcl"/>
+  <File Type="REPORTS-TCL" Name="combinational_lock_reports.tcl"/>
+  <File Type="RDS-RDS" Name="combinational_lock.vds"/>
+  <File Type="RDS-UTIL" Name="combinational_lock_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="combinational_lock_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="combinational_lock.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/button_mechanisim.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../csse4010_assesment_2/csse4010_assesment_2.srcs/sources_1/new/button_mechanisim.vhd"/>
+        <Attr Name="ImportTime" Val="1692281407"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hex_to_ssd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../csse4010_assesment_2/csse4010_assesment_2.srcs/sources_1/new/hex_to_ssd.vhd"/>
+        <Attr Name="ImportTime" Val="1692179505"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/lock_unlock_mechanism.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../csse4010_assesment_2/csse4010_assesment_2.srcs/sources_1/new/lock_unlock_mechanism.vhd"/>
+        <Attr Name="ImportTime" Val="1692311938"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/register_value_comparator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../csse4010_assesment_2/csse4010_assesment_2.srcs/sources_1/new/register_value_comparator.vhd"/>
+        <Attr Name="ImportTime" Val="1692313605"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ssd_mux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../csse4010_assesment_2/csse4010_assesment_2.srcs/sources_1/new/ssd_mux.vhd"/>
+        <Attr Name="ImportTime" Val="1692173691"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switch_to_register.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../csse4010_assesment_2/csse4010_assesment_2.srcs/sources_1/new/switch_to_register.vhd"/>
+        <Attr Name="ImportTime" Val="1692173702"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/combinational_lock.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../csse4010_assesment_2/csse4010_assesment_2.srcs/sources_1/new/combinational_lock.vhd"/>
+        <Attr Name="ImportTime" Val="1692508742"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="combinational_lock"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/nexys_board.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../csse4010_assesment_2/csse4010_assesment_2.srcs/constrs_1/new/nexys_board.xdc"/>
+        <Attr Name="ImportTime" Val="1692368863"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/nexys_board.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
