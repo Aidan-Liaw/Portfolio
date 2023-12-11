@@ -1,0 +1,200 @@
+
+*** Running vivado
+    with args -log sequence_detector.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sequence_detector.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source sequence_detector.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: see 'xilinx:packagingInfo' : Bad end of element
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file c:/Users/aidan/vivado-library-master/ip/Zmods/ZmodDigitizerController/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aidan/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top sequence_detector -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27764
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sequence_detector' [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/sequence_detector.vhd:41]
+INFO: [Synth 8-3491] module 'flag_output_handler' declared at 'C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/flag_output_handler.vhd:34' bound to instance 'FlagOutputHandler' of component 'flag_output_handler' [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/sequence_detector.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'flag_output_handler' [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/flag_output_handler.vhd:41]
+WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/flag_output_handler.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'flag_output_handler' (1#1) [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/flag_output_handler.vhd:41]
+WARNING: [Synth 8-614] signal 'state' is read in the process but is not in the sensitivity list [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/sequence_detector.vhd:60]
+WARNING: [Synth 8-614] signal 'input' is read in the process but is not in the sensitivity list [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/sequence_detector.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'sequence_detector' (2#1) [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/sequence_detector.vhd:41]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'flag_value_reg' [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/flag_output_handler.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/flag_output_handler.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'sequence_detected_reg' [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/sequence_detector.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'state_reg' [C:/Users/aidan/sequence_detector/sequence_detector.srcs/sources_1/imports/new/sequence_detector.vhd:63]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |     2|
+|3     |LUT4 |     2|
+|4     |LUT5 |     4|
+|5     |LUT6 |     1|
+|6     |LD   |     6|
+|7     |IBUF |     3|
+|8     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------+------+
+|      |Instance            |Module              |Cells |
++------+--------------------+--------------------+------+
+|1     |top                 |                    |    20|
+|2     |  FlagOutputHandler |flag_output_handler |     6|
++------+--------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 1015.035 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 8 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 1015.035 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aidan/sequence_detector/sequence_detector.runs/synth_1/sequence_detector.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sequence_detector_utilization_synth.rpt -pb sequence_detector_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 17:52:33 2023...
