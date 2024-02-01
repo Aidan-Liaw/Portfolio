@@ -1,0 +1,18 @@
++====================+===================+=======================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                   |
++====================+===================+=======================================================+
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[9]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[6]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[10]/R |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[7]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[0]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[8]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[4]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[2]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[5]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[12]/R |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[3]/R  |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[11]/R |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[13]/R |
+| clk_fpga_0         | clk_fpga_0        | processing_system_i/top_0/U0/UUT0/adc_dat_a_reg[1]/R  |
++--------------------+-------------------+-------------------------------------------------------+

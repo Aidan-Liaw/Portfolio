@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Default View_ScaleFactor":"0.907928",
+   "Default View_TopLeft":"-436,-551",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Interfaces View_Layers":"/dclk_in_0_1:false|",
+   "Interfaces View_ScaleFactor":"1.25",
+   "Interfaces View_TopLeft":"-290,-180",
+   "No Loops_ScaleFactor":"1.24853",
+   "No Loops_TopLeft":"-146,-85",
+   "Reduced Jogs_Layers":"/dclk_in_0_1:true|",
+   "Reduced Jogs_ScaleFactor":"1.21993",
+   "Reduced Jogs_TopLeft":"-146,-18",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port Vp_Vn_0 -pg 1 -lvl 0 -x -290 -y -80 -defaultsOSRD
+preplace port Vaux0_0 -pg 1 -lvl 0 -x -290 -y -50 -defaultsOSRD
+preplace port Vaux1_0 -pg 1 -lvl 0 -x -290 -y -20 -defaultsOSRD
+preplace port Vaux8_0 -pg 1 -lvl 0 -x -290 -y 10 -defaultsOSRD
+preplace port Vaux9_0 -pg 1 -lvl 0 -x -290 -y 40 -defaultsOSRD
+preplace port port-id_dclk_in_0 -pg 1 -lvl 0 -x -290 -y 70 -defaultsOSRD
+preplace portBus daddr_in_0 -pg 1 -lvl 0 -x -290 -y -150 -defaultsOSRD
+preplace portBus channel_out_0 -pg 1 -lvl 3 -x 570 -y -90 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 1 -x 160 -y -50 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 2 -x 460 -y -220 -defaultsOSRD
+preplace netloc daddr_in_0_1 1 0 1 N -150
+preplace netloc dclk_in_0_1 1 0 2 -20J -270 N
+preplace netloc xadc_wiz_0_do_out 1 0 2 0 -250 N
+preplace netloc xadc_wiz_0_eoc_out 1 0 2 20 -230 300
+preplace netloc xadc_wiz_0_eos_out 1 1 1 370 -170n
+preplace netloc xadc_wiz_0_drdy_out 1 0 2 10 -240 310
+preplace netloc xadc_wiz_0_channel_out 1 1 2 360J -90 NJ
+preplace netloc Vp_Vn_0_1 1 0 1 0J -80n
+preplace netloc Vaux0_0_1 1 0 1 -10J -50n
+preplace netloc Vaux1_0_1 1 0 1 -260 -20n
+preplace netloc Vaux8_0_1 1 0 1 -270 10n
+preplace netloc Vaux9_0_1 1 0 1 -270 40n
+levelinfo -pg 1 -290 160 460 570
+pagesize -pg 1 -db -bbox -sgen -440 -460 740 360
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_clkrst_cnt":"1"
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "processing_system_top_0_1",
+    "cell_name": "top_0",
+    "component_reference": "xilinx.com:module_ref:top:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../adc_to_ps_2.gen/sources_1/bd/processing_system/ip/processing_system_top_0_1",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "processing_system_top_0_1", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "redpitaya.com:redpitaya:part0:1.1" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z010" } ],
+        "PACKAGE": [ { "value": "clg400" } ],
+        "PREFHDL": [ { "value": "VHDL" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../adc_to_ps_2.gen/sources_1/bd/processing_system/ip/processing_system_top_0_1" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "adc_dat_a_in": [ { "direction": "in", "size_left": "13", "size_right": "0" } ],
+        "adc_dat_b_in": [ { "direction": "in", "size_left": "13", "size_right": "0" } ],
+        "adc_clk_p_in": [ { "direction": "in", "driver_value": "0" } ],
+        "adc_clk_n_in": [ { "direction": "in", "driver_value": "0" } ],
+        "adc_rst_in": [ { "direction": "in" } ],
+        "adc_clk_source": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "adc_cdcs_out": [ { "direction": "out" } ],
+        "led_out": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "adc_dat_a_out": [ { "direction": "out", "size_left": "13", "size_right": "0" } ],
+        "adc_dat_b_out": [ { "direction": "out", "size_left": "13", "size_right": "0" } ],
+        "adc_clk_out": [ { "direction": "out" } ]
+      },
+      "interfaces": {
+        "adc_in": {
+          "vlnv": "digilentinc.com:interface:tmds:1.0",
+          "abstraction_type": "digilentinc.com:interface:tmds_rtl:1.0",
+          "mode": "slave",
+          "port_maps": {
+            "CLK_P": [ { "physical_name": "adc_clk_p_in" } ],
+            "CLK_N": [ { "physical_name": "adc_clk_n_in" } ]
+          }
+        }
+      }
+    }
+  }
+}

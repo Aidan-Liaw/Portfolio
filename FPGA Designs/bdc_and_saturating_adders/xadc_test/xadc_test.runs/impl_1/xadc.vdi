@@ -1,0 +1,746 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jan 29 10:37:23 2024
+# Process ID: 23668
+# Current directory: C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/impl_1
+# Command line: vivado.exe -log xadc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source xadc.tcl -notrace
+# Log file: C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/impl_1/xadc.vdi
+# Journal file: C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/impl_1\vivado.jou
+# Running On: Lenovo, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16890 MB
+#-----------------------------------------------------------
+source xadc.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aidan/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/impl_1/{C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.cache/ip} 
+Command: link_design -top xadc -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.dcp' for cell 'XADC/design_1_i/clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.dcp' for cell 'XADC/design_1_i/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.dcp' for cell 'XADC/design_1_i/xadc_wiz_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 945.418 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 607 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, XADC/design_1_i/clk_wiz/inst/clkin1_ibufg, from the path connected to top-level port: adc_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'XADC/design_1_i/clk_wiz/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+INFO: [Chipscope 16-324] Core: XADC/design_1_i/ila_0 UUID: d16cea05-87d1-5ee2-b7a1-3b8d636811cb 
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc] for cell 'XADC/design_1_i/xadc_wiz_0/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.xdc] for cell 'XADC/design_1_i/xadc_wiz_0/U0'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_board.xdc] for cell 'XADC/design_1_i/clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_board.xdc] for cell 'XADC/design_1_i/clk_wiz/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xdc] for cell 'XADC/design_1_i/clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1666.738 ; gain = 570.930
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xdc] for cell 'XADC/design_1_i/clk_wiz/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'XADC/design_1_i/ila_0/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'XADC/design_1_i/ila_0/U0'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'XADC/design_1_i/ila_0/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'XADC/design_1_i/ila_0/U0'
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:1]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports adc_clk_p_i]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:3]
+WARNING: [Vivado 12-646] clock 'adc_clk' not found. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {adc_dat_a_i[*]}]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:3]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:4]
+WARNING: [Vivado 12-646] clock 'adc_clk' not found. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {adc_dat_b_i[*]}]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'daisy_p_i[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:6]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports {daisy_p_i[1]}]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:6]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc]
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[6]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[7]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[8]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[9]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[10]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[11]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[12]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[13]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[6]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[7]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[8]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[9]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[10]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[11]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[12]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[13]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_n_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_n_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_p_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_n_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_p_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_n_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_p_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_n_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_p_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_n_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_csn_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_csn_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_csn_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_csn_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc]
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[6]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[7]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[8]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[9]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[10]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[11]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[12]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[13]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_wrt_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_sel_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_clk_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_rst_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc]
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/xadc.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/xadc.xdc]
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:20]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:24]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc]
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/sata.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/sata.xdc]
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/led.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1666.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 368 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 336 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 32 instances
+
+18 Infos, 105 Warnings, 104 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1666.738 ; gain = 1131.176
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.851 . Memory (MB): peak = 1666.738 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1f6be9cd1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1684.699 ; gain = 17.961
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2082.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2082.363 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: dd0d97e3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Phase 1.1 Core Generation And Design Setup | Checksum: dd0d97e3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: dd0d97e3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Phase 1 Initialization | Checksum: dd0d97e3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: dd0d97e3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: dd0d97e3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Phase 2 Timer Update And Timing Data Collection | Checksum: dd0d97e3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 17 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 871f6645
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Retarget | Checksum: 871f6645
+INFO: [Opt 31-389] Phase Retarget created 7 cells and removed 16 cells
+INFO: [Opt 31-1021] In phase Retarget, 66 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: c04edd72
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Constant propagation | Checksum: c04edd72
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 16 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 49 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: f80dff47
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Sweep | Checksum: f80dff47
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 44 cells
+INFO: [Opt 31-1021] In phase Sweep, 879 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG adc_clk_IBUF_BUFG_inst to drive 61 load(s) on clock net adc_clk_IBUF_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 6 BUFG optimization | Checksum: 16030e767
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:30 . Memory (MB): peak = 2082.363 ; gain = 19.828
+BUFG optimization | Checksum: 16030e767
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_CDONE/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_CDONE/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_C due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_NS0/I_YESLUT6.U_SRL32_D due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_C due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/U_NS1/I_YESLUT6.U_SRL32_D due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/U_CMPRESET/I_YESLUT6.U_SRL32_B due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WCE/I_YESLUT6.U_SRLC16E due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WHCMPCE/I_YESLUT6.U_SRL32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/U_WLCMPCE/I_YESLUT6.U_SRL32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCE/I_YESLUT6.U_SRLC16E due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCMPCE/I_YESLUT6.U_SRL32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCRST/I_YESLUT6.U_SRL32_A due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from XADC/design_1_i/ila_0/U0/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/U_SCRST/I_YESLUT6.U_SRL32_B due to none static srl address bits
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 16030e767
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:01:30 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Shift Register Optimization | Checksum: 16030e767
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 16030e767
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:30 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Post Processing Netlist | Checksum: 16030e767
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 57 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1a0d2f82f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:30 . Memory (MB): peak = 2082.363 ; gain = 19.828
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2082.363 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1a0d2f82f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:30 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Phase 9 Finalization | Checksum: 1a0d2f82f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:30 . Memory (MB): peak = 2082.363 ; gain = 19.828
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               7  |              16  |                                             66  |
+|  Constant propagation         |               0  |              16  |                                             49  |
+|  Sweep                        |               0  |              44  |                                            879  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             57  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1a0d2f82f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:01:30 . Memory (MB): peak = 2082.363 ; gain = 19.828
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2082.363 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 183dca7ec
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 183dca7ec
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2164.613 ; gain = 82.250
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 183dca7ec
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2164.613 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1e3d32fca
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2164.613 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+54 Infos, 124 Warnings, 104 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:04 ; elapsed = 00:01:35 . Memory (MB): peak = 2164.613 ; gain = 497.875
+INFO: [runtcl-4] Executing : report_drc -file xadc_drc_opted.rpt -pb xadc_drc_opted.pb -rpx xadc_drc_opted.rpx
+Command: report_drc -file xadc_drc_opted.rpt -pb xadc_drc_opted.pb -rpx xadc_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/impl_1/xadc_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 2164.613 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/impl_1/xadc_opt.dcp' has been generated.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 139318daa
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2164.613 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (61) is greater than number of available pins (50).
+The following are banks with available pins: 
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 2 Drv: 12  has only 50 sites available on device, but needs 60 sites.
+	Term: aux0_out[0]
+	Term: aux0_out[1]
+	Term: aux0_out[2]
+	Term: aux0_out[3]
+	Term: aux0_out[4]
+	Term: aux0_out[5]
+	Term: aux0_out[6]
+	Term: aux0_out[7]
+	Term: aux0_out[8]
+	Term: aux0_out[9]
+	Term: aux0_out[10]
+	Term: aux0_out[11]
+	Term: aux1_out[0]
+	Term: aux1_out[1]
+	Term: aux1_out[2]
+	Term: aux1_out[3]
+	Term: aux1_out[4]
+	Term: aux1_out[5]
+	Term: aux1_out[6]
+	Term: aux1_out[7]
+	Term: aux1_out[8]
+	Term: aux1_out[9]
+	Term: aux1_out[10]
+	Term: aux1_out[11]
+	Term: aux8_out[0]
+	Term: aux8_out[1]
+	Term: aux8_out[2]
+	Term: aux8_out[3]
+	Term: aux8_out[4]
+	Term: aux8_out[5]
+	Term: aux8_out[6]
+	Term: aux8_out[7]
+	Term: aux8_out[8]
+	Term: aux8_out[9]
+	Term: aux8_out[10]
+	Term: aux8_out[11]
+	Term: aux9_out[0]
+	Term: aux9_out[1]
+	Term: aux9_out[2]
+	Term: aux9_out[3]
+	Term: aux9_out[4]
+	Term: aux9_out[5]
+	Term: aux9_out[6]
+	Term: aux9_out[7]
+	Term: aux9_out[8]
+	Term: aux9_out[9]
+	Term: aux9_out[10]
+	Term: aux9_out[11]
+	Term: dedicated_out[0]
+	Term: dedicated_out[1]
+	Term: dedicated_out[2]
+	Term: dedicated_out[3]
+	Term: dedicated_out[4]
+	Term: dedicated_out[5]
+	Term: dedicated_out[6]
+	Term: dedicated_out[7]
+	Term: dedicated_out[8]
+	Term: dedicated_out[9]
+	Term: dedicated_out[10]
+	Term: dedicated_out[11]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     0 |                                                                        |                                          |        |        |        |     |
+| 35 |    50 |     8 | LVCMOS33(8)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |     8 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | vinn_i[0]            | LVCMOS33        | IOB_X0Y95            | A20                  |                      |
+|        | vinn_i[1]            | LVCMOS33        | IOB_X0Y97            | B20                  |                      |
+|        | vinn_i[2]            | LVCMOS33        | IOB_X0Y93            | D18                  |                      |
+|        | vinn_i[3]            | LVCMOS33        | IOB_X0Y89            | E19                  |                      |
+|        | vinp_i[0]            | LVCMOS33        | IOB_X0Y96            | B19                  |                      |
+|        | vinp_i[1]            | LVCMOS33        | IOB_X0Y98            | C20                  |                      |
+|        | vinp_i[2]            | LVCMOS33        | IOB_X0Y94            | E17                  |                      |
+|        | vinp_i[3]            | LVCMOS33        | IOB_X0Y90            | E18                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 91b2a9c2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.448 . Memory (MB): peak = 2164.613 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 91b2a9c2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.451 . Memory (MB): peak = 2164.613 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 6d9f7758
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.458 . Memory (MB): peak = 2164.613 ; gain = 0.000
+71 Infos, 124 Warnings, 104 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 29 10:39:26 2024...

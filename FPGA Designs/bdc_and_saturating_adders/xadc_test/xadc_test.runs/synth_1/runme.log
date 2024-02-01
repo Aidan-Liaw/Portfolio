@@ -1,0 +1,507 @@
+
+*** Running vivado
+    with args -log xadc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xadc.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xadc.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 477.707 ; gain = 184.934
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aidan/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/utils_1/imports/synth_1/xadc.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/utils_1/imports/synth_1/xadc.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top xadc -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 44408
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1354.500 ; gain = 437.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'xadc' [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/sources_1/new/xadc.vhd:50]
+INFO: [Synth 8-3491] module 'design_1_wrapper' declared at 'C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:15' bound to instance 'XADC' of component 'design_1_wrapper' [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/sources_1/new/xadc.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:35]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:15' bound to instance 'design_1_i' of component 'design_1' [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:39]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0' declared at 'C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/.Xil/Vivado-46864-Lenovo/realtime/design_1_clk_wiz_0_stub.vhdl:6' bound to instance 'clk_wiz' of component 'design_1_clk_wiz_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0' [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/.Xil/Vivado-46864-Lenovo/realtime/design_1_clk_wiz_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_ila_0_0' declared at 'C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/.Xil/Vivado-46864-Lenovo/realtime/design_1_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'design_1_ila_0_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'design_1_ila_0_0' [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/.Xil/Vivado-46864-Lenovo/realtime/design_1_ila_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_0' declared at 'C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/.Xil/Vivado-46864-Lenovo/realtime/design_1_xadc_wiz_0_0_stub.vhdl:6' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_0' [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/.Xil/Vivado-46864-Lenovo/realtime/design_1_xadc_wiz_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_1' declared at 'c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_1' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:209]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_1' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_1' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_1/synth/design_1_xlconcat_0_1.v:53]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:215]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_8_xlconstant' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_8_xlconstant' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_1_0' declared at 'c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:53' bound to instance 'xlconstant_1' of component 'design_1_xlconstant_1_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:219]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_8_xlconstant__parameterized0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_8_xlconstant__parameterized0' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:53]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:223]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_3_xlslice' [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_3_xlslice' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'xadc' (0#1) [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/sources_1/new/xadc.vhd:50]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlconcat_0'. This will prevent further optimization [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/synth/design_1.vhd:209]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'design_1_i'. This will prevent further optimization [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:56]
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.934 ; gain = 552.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.934 ; gain = 552.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1468.934 ; gain = 552.152
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1468.934 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'XADC/design_1_i/xadc_wiz_0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'XADC/design_1_i/xadc_wiz_0'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc] for cell 'XADC/design_1_i/clk_wiz'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc] for cell 'XADC/design_1_i/clk_wiz'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'XADC/design_1_i/ila_0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'XADC/design_1_i/ila_0'
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'daisy_p_i[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc:6]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/clocks.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xadc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[6]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[7]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[8]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[9]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[10]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[11]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[12]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_i[13]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[6]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[7]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[8]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[9]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[10]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[11]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[12]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_i[13]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_n_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_n_i'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_p_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_n_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_p_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_n_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_p_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_n_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_p_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'adc_enc_n_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'adc_csn_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'adc_csn_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'adc_csn_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'adc_csn_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc:67]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xadc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/adc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xadc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xadc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[6]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[7]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[8]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[9]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[10]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[11]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[12]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[13]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'dac_wrt_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'dac_sel_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'dac_clk_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'dac_rst_o'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc:47]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/dac.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xadc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/xadc.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/xadc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/xadc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xadc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xadc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'exp_n_tri_io[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'exp_p_tri_io[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:22]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc:22]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/expansion.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xadc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/sata.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/sata.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/sata.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xadc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/led.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.srcs/constrs_1/new/led.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xadc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1551.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Access is denied.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1551.918 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for adc_clk. (constraint file  {c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for adc_clk. (constraint file  {c:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0/design_1_clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for XADC/design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for XADC/design_1_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for XADC/design_1_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for XADC/design_1_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for XADC/design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for XADC/design_1_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for XADC/design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for XADC/design_1_i/xlconstant_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |design_1_clk_wiz_0    |         1|
+|2     |design_1_ila_0_0      |         1|
+|3     |design_1_xadc_wiz_0_0 |         1|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_1_clk_wiz_0_bbox    |     1|
+|2     |design_1_ila_0_0_bbox      |     1|
+|3     |design_1_xadc_wiz_0_0_bbox |     1|
+|4     |LUT6                       |    60|
+|5     |FDRE                       |    60|
+|6     |IBUF                       |    11|
+|7     |OBUF                       |    60|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1551.918 ; gain = 635.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1551.918 ; gain = 552.152
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1551.918 ; gain = 635.137
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1551.918 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1551.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Access is denied.
+Synth Design complete | Checksum: fa202bc6
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 208 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:36 . Memory (MB): peak = 1551.918 ; gain = 1019.047
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1551.918 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aidan/Portfolio/FPGA Designs/bdc_and_saturating_adders/xadc_test/xadc_test.runs/synth_1/xadc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xadc_utilization_synth.rpt -pb xadc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 29 10:37:16 2024...

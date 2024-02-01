@@ -1,0 +1,44 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.46328",
+   "Default View_TopLeft":"1007,81",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 2150 -y 440 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 2150 -y 470 -defaultsOSRD
+preplace port port-id_adc_clk_p_i -pg 1 -lvl 0 -x -130 -y 320 -defaultsOSRD
+preplace port port-id_adc_clk_n_i -pg 1 -lvl 0 -x -130 -y 290 -defaultsOSRD
+preplace portBus adc_dat_a_i -pg 1 -lvl 0 -x -130 -y 170 -defaultsOSRD
+preplace portBus adc_dat_b_i -pg 1 -lvl 0 -x -130 -y 200 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 140 -y 160 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1370 -y 260 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1080 -y 230 -defaultsOSRD
+preplace inst rst_ps7_0_125M -pg 1 -lvl 2 -x 570 -y 270 -defaultsOSRD
+preplace inst adc_0 -pg 1 -lvl 2 -x 570 -y 450 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1080 -y 410 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 840 -y 580 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 -90 0 370 110 N 110 920 110 1230
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 390 250n
+preplace netloc rst_ps7_0_125M_peripheral_aresetn 1 2 3 N 310 930 490 1220J
+preplace netloc adc_dat_a_i_1 1 0 2 -110J -20 400
+preplace netloc adc_dat_b_i_1 1 0 2 -100J -10 380
+preplace netloc adc_clk_n_i_1 1 0 2 -110J 480 N
+preplace netloc adc_clk_p_i_1 1 0 2 NJ 320 370
+preplace netloc adc_0_adc_dat_b_out 1 2 2 740 390 N
+preplace netloc adc_0_adc_dat_a_out 1 2 2 750 410 N
+preplace netloc xlconstant_0_dout 1 3 1 940 430n
+preplace netloc xlconcat_0_dout 1 4 2 N 410 1510
+preplace netloc processing_system7_0_DDR 1 1 5 NJ 80 NJ 80 920 90 NJ 90 1530J
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 NJ 100 NJ 100 N 100 NJ 100 1520J
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 NJ 160 740 170 N
+preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 1220 230n
+levelinfo -pg 1 -130 140 570 840 1080 1370 2150
+pagesize -pg 1 -db -bbox -sgen -290 -120 2320 670
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}

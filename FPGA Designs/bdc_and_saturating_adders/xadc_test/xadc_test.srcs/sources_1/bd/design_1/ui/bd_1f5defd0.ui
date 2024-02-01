@@ -1,0 +1,129 @@
+{
+   "ActiveEmotionalView":"No Loops",
+   "Addressing View_ScaleFactor":"1.25",
+   "Addressing View_TopLeft":"-575,-179",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-381,-150",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"1.23041",
+   "Grouping and No Loops_TopLeft":"-102,-24",
+   "Interfaces View_Layers":"/clk_wiz_clk_out1:false|/reset_0_1:false|/clk_in1_0_1:false|",
+   "Interfaces View_ScaleFactor":"1.25",
+   "Interfaces View_TopLeft":"-575,-180",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port Vp_Vn -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port Vaux0 -pg 1 -lvl 0 -x 0 -y 390 -defaultsOSRD
+preplace port Vaux1 -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port Vaux8 -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD
+preplace port Vaux9 -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port port-id_clk_in1 -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_drdy_out -pg 1 -lvl 5 -x 1020 -y 350 -defaultsOSRD
+preplace portBus Dout -pg 1 -lvl 5 -x 1020 -y 380 -defaultsOSRD
+preplace portBus channel_out -pg 1 -lvl 5 -x 1020 -y 740 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -x 620 -y 120 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 22 28 26 25 24 27} -defaultsOSRD -pinDir s_drp left -pinY s_drp 20L -pinDir s_drp.daddr_in left -pinY s_drp.daddr_in 40L -pinDir s_drp.den_in left -pinY s_drp.den_in 120L -pinDir s_drp.do_out left -pinY s_drp.do_out 140L -pinDir s_drp.drdy_out left -pinY s_drp.drdy_out 160L -pinDir s_drp.dwe_in left -pinY s_drp.dwe_in 180L -pinDir Vp_Vn left -pinY Vp_Vn 240L -pinDir Vaux0 left -pinY Vaux0 270L -pinDir Vaux1 left -pinY Vaux1 300L -pinDir Vaux8 left -pinY Vaux8 330L -pinDir Vaux9 left -pinY Vaux9 360L -pinDir dclk_in left -pinY dclk_in 400L -pinDir reset_in left -pinY reset_in 380L -pinBusDir channel_out right -pinBusY channel_out 400R -pinDir eoc_out right -pinY eoc_out 360R -pinDir alarm_out right -pinY alarm_out 340R -pinDir eos_out right -pinY eos_out 320R -pinDir busy_out right -pinY busy_out 380R
+preplace inst clk_wiz -pg 1 -lvl 1 -x 110 -y 140 -swap {1 0 3 2} -defaultsOSRD -pinDir reset left -pinY reset 40L -pinDir clk_in1 left -pinY clk_in1 20L -pinDir clk_out1 right -pinY clk_out1 40R -pinDir locked right -pinY locked 20R
+preplace inst ila_0 -pg 1 -lvl 4 -x 910 -y 420 -swap {3 5 4 1 2 0} -defaultsOSRD -pinDir clk left -pinY clk 220L -pinBusDir probe0 left -pinBusY probe0 260L -pinBusDir probe1 left -pinBusY probe1 240L -pinBusDir probe2 left -pinBusY probe2 60L -pinBusDir probe3 left -pinBusY probe3 80L -pinBusDir probe4 left -pinBusY probe4 20L
+preplace inst xlslice_0 -pg 1 -lvl 3 -x 620 -y 680 -defaultsOSRD -pinBusDir Din left -pinBusY Din 20L -pinBusDir Dout right -pinBusY Dout 20R
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 290 -y 40 -swap {2 1 0} -defaultsOSRD -pinBusDir In0 right -pinBusY In0 140R -pinBusDir In1 left -pinBusY In1 20L -pinBusDir dout right -pinBusY dout 120R
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 110 -y 40 -defaultsOSRD -pinBusDir dout right -pinBusY dout 20R
+preplace inst xlconstant_1 -pg 1 -lvl 2 -x 290 -y 280 -defaultsOSRD -pinBusDir dout right -pinBusY dout 20R
+preplace netloc clk_wiz_clk_out1 1 1 3 200 500 380 640 NJ
+preplace netloc reset_0_1 1 0 3 20 240 NJ 240 400J
+preplace netloc clk_in1_0_1 1 0 1 NJ 160
+preplace netloc xadc_wiz_0_eoc_out 1 2 2 440 600 760
+preplace netloc xlslice_0_Dout 1 3 2 820J 380 NJ
+preplace netloc xadc_wiz_0_channel_out 1 2 3 420 580 780 740 N
+preplace netloc xadc_wiz_0_do_out 1 2 1 460 260n
+preplace netloc xlconcat_0_dout 1 2 1 N 160
+preplace netloc xlconstant_0_dout 1 1 1 N 60
+preplace netloc xlconstant_1_dout 1 2 1 N 300
+preplace netloc xadc_wiz_0_drdy_out 1 2 3 480 620 800J 350 NJ
+preplace netloc xadc_wiz_0_eos_out 1 3 1 N 440
+preplace netloc Vp_Vn_0_1 1 0 3 NJ 360 NJ 360 NJ
+preplace netloc Vaux0_0_1 1 0 3 NJ 390 NJ 390 NJ
+preplace netloc Vaux1_0_1 1 0 3 NJ 420 NJ 420 NJ
+preplace netloc Vaux8_0_1 1 0 3 NJ 450 NJ 450 NJ
+preplace netloc Vaux9_0_1 1 0 3 NJ 480 NJ 480 NJ
+levelinfo -pg 1 0 110 290 620 910 1020
+pagesize -pg 1 -db -bbox -sgen -100 0 1180 760
+",
+   "No Loops_ScaleFactor":"0.96037",
+   "No Loops_TopLeft":"95,22",
+   "Reduced Jogs_ExpandedHierarchyInLayout":"",
+   "Reduced Jogs_Layers":"/clk_wiz_clk_out1:true|/reset_0_1:true|/clk_in1_0_1:true|",
+   "Reduced Jogs_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port Vp_Vn -pg 1 -lvl 0 -x -160 -y 160 -defaultsOSRD
+preplace port Vaux0 -pg 1 -lvl 0 -x -160 -y 190 -defaultsOSRD
+preplace port Vaux1 -pg 1 -lvl 0 -x -160 -y 220 -defaultsOSRD
+preplace port Vaux8 -pg 1 -lvl 0 -x -160 -y 250 -defaultsOSRD
+preplace port Vaux9 -pg 1 -lvl 0 -x -160 -y 280 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -160 -y 310 -defaultsOSRD
+preplace port port-id_clk_in1 -pg 1 -lvl 0 -x -160 -y 60 -defaultsOSRD
+preplace port port-id_drdy_out -pg 1 -lvl 5 -x 1340 -y 140 -defaultsOSRD
+preplace portBus Dout -pg 1 -lvl 5 -x 1340 -y 170 -defaultsOSRD
+preplace portBus channel_out -pg 1 -lvl 5 -x 1340 -y 220 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -x 900 -y 80 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 22 24 25 27 26 28} -defaultsOSRD -pinY s_drp 20L -pinY s_drp.daddr_in 40L -pinY s_drp.den_in 60L -pinY s_drp.di_in 80L -pinY s_drp.do_out 100L -pinY s_drp.drdy_out 120L -pinY s_drp.dwe_in 140L -pinY Vp_Vn 160L -pinY Vaux0 180L -pinY Vaux1 200L -pinY Vaux8 220L -pinY Vaux9 240L -pinY dclk_in 280L -pinY reset_in 260L -pinBusY channel_out 160R -pinY eoc_out 180R -pinY alarm_out 220R -pinY eos_out 200R -pinY busy_out 240R
+preplace inst clk_wiz -pg 1 -lvl 1 -x 170 -y 140 -swap {1 0 3 2} -defaultsOSRD -pinY reset 40L -pinY clk_in1 20L -pinY clk_out1 40R -pinY locked 20R
+preplace inst ila_0 -pg 1 -lvl 4 -x 1210 -y 220 -swap {4 5 0 1 3 2} -defaultsOSRD -pinY clk 180L -pinBusY probe0 200L -pinBusY probe1 20L -pinBusY probe2 40L -pinBusY probe3 80L -pinBusY probe4 60L
+preplace inst xlslice_0 -pg 1 -lvl 3 -x 900 -y 530 -defaultsOSRD -pinBusY Din 20L -pinBusY Dout 20R
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 470 -y 60 -swap {1 0 2} -defaultsOSRD -pinBusY In0 40L -pinBusY In1 20L -pinBusY dout 20R
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 170 -y 40 -defaultsOSRD -pinBusY dout 20R
+preplace inst xlconstant_1 -pg 1 -lvl 2 -x 470 -y 200 -defaultsOSRD -pinBusY dout 20R
+preplace netloc clk_wiz_clk_out1 1 1 3 320 440 700 480 1060J
+preplace netloc reset_0_1 1 0 3 20 240 360J 160 640J
+preplace netloc clk_in1_0_1 1 0 1 80J 60n
+preplace netloc xadc_wiz_0_eoc_out 1 2 2 760 440 1040
+preplace netloc xlslice_0_Dout 1 3 2 1120J 180 1320J
+preplace netloc xadc_wiz_0_channel_out 1 1 4 380 300 600 420 1100 480 1300
+preplace netloc xadc_wiz_0_do_out 1 2 1 720 180n
+preplace netloc xlconcat_0_dout 1 2 1 760 80n
+preplace netloc xlconstant_0_dout 1 1 1 380 60n
+preplace netloc xlconstant_1_dout 1 2 1 N 220
+preplace netloc xadc_wiz_0_drdy_out 1 2 3 740 460 1080J 160 1300J
+preplace netloc xadc_wiz_0_eos_out 1 3 1 N 280
+preplace netloc Vp_Vn_0_1 1 0 3 60J 260 360J 320 560J
+preplace netloc Vaux0_0_1 1 0 3 -100J 280 340J 340 580J
+preplace netloc Vaux1_0_1 1 0 3 40J 300 300J 360 620J
+preplace netloc Vaux8_0_1 1 0 3 -120J 320 280J 380 660J
+preplace netloc Vaux9_0_1 1 0 3 -140J 340 260J 400 680J
+levelinfo -pg 1 -160 170 470 900 1210 1340
+pagesize -pg 1 -db -bbox -sgen -260 -50 1500 610
+",
+   "Reduced Jogs_ScaleFactor":"0.86262",
+   "Reduced Jogs_TopLeft":"314,-214",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port Vp_Vn_0 -pg 1 -lvl 0 -x -270 -y 40 -defaultsOSRD
+preplace port Vaux0_0 -pg 1 -lvl 0 -x -270 -y 70 -defaultsOSRD
+preplace port Vaux1_0 -pg 1 -lvl 0 -x -270 -y 100 -defaultsOSRD
+preplace port Vaux8_0 -pg 1 -lvl 0 -x -270 -y 140 -defaultsOSRD
+preplace port Vaux9_0 -pg 1 -lvl 0 -x -270 -y 180 -defaultsOSRD
+preplace port port-id_reset_0 -pg 1 -lvl 0 -x -270 -y 210 -defaultsOSRD
+preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x -270 -y 240 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 2 -x 380 -y 210 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 70 -y 210 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 610 -y -20 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 70 -y -10 -defaultsOSRD
+preplace netloc clk_wiz_clk_out1 1 1 2 210 -70 N
+preplace netloc reset_0_1 1 0 2 -40 120 180
+preplace netloc clk_in1_0_1 1 0 1 -250 220n
+preplace netloc xadc_wiz_0_eoc_out 1 1 2 240 400 520
+preplace netloc Vp_Vn_0_1 1 0 2 -250J 60 230J
+preplace netloc Vaux0_0_1 1 0 2 NJ 70 220J
+preplace netloc Vaux1_0_1 1 0 2 NJ 100 200J
+preplace netloc Vaux8_0_1 1 0 2 -250J 130 190J
+preplace netloc Vaux9_0_1 1 0 2 -30J 140 170J
+levelinfo -pg 1 -270 70 380 610 700
+pagesize -pg 1 -db -bbox -sgen -380 -180 700 420
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

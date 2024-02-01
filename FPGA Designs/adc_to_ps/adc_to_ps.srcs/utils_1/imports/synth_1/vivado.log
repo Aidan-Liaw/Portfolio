@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Jan 31 13:38:54 2024
+# Process ID: 50780
+# Current directory: C:/Users/aidan/Portfolio/FPGA Designs/adc_to_ps/adc_to_ps.srcs/utils_1/imports/synth_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18368 C:\Users\aidan\Portfolio\FPGA Designs\adc_to_ps\adc_to_ps.srcs\utils_1\imports\synth_1\top.dcp
+# Log file: C:/Users/aidan/Portfolio/FPGA Designs/adc_to_ps/adc_to_ps.srcs/utils_1/imports/synth_1/vivado.log
+# Journal file: C:/Users/aidan/Portfolio/FPGA Designs/adc_to_ps/adc_to_ps.srcs/utils_1/imports/synth_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 31 13:39:31 2024...
