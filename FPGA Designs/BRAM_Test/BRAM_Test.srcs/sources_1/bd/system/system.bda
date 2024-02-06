@@ -190,21 +190,21 @@
             },
             "V3": {
                 "VT": "AC",
-                "BA": "0x42000000",
-                "HA": "0x42003FFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
+                "BA": "0x40000000",
+                "HA": "0x4000FFFF",
+                "BP": "C_S_AXI_BASEADDR",
+                "HP": "C_S_AXI_HIGHADDR",
                 "MA": "Data",
                 "MX": "/processing_system7_0",
                 "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_gpio_0_Reg",
+                "MS": "SEG_axi_bram_ctrl_0_Mem0",
                 "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_0",
+                "SX": "/axi_bram_ctrl_0",
                 "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
+                "SS": "Mem0",
+                "SV": "xilinx.com:ip:axi_bram_ctrl:4.1",
                 "TM": "both",
-                "TU": "register"
+                "TU": "memory"
             }
         },
         "edges": [

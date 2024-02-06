@@ -1,0 +1,1216 @@
+
+*** Running vivado
+    with args -log system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/aidan/Downloads/RedPitaya-FPGA/prj/Examples/Stopwatch/tmp/cores'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.runs/impl_1/{C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.cache/ip} 
+Command: link_design -top system_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/system_axi_bram_ctrl_0_0.dcp' for cell 'system_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/system_axi_smc_0.dcp' for cell 'system_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_blk_mem_gen_0_0/system_blk_mem_gen_0_0.dcp' for cell 'system_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_processing_system7_0_1/system_processing_system7_0_1.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0.dcp' for cell 'system_i/rst_ps7_0_50M'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.427 . Memory (MB): peak = 993.105 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 272 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_processing_system7_0_1/system_processing_system7_0_1.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_processing_system7_0_1/system_processing_system7_0_1.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc:178]
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_r_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc:178]
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_r_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:85]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:107]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc:107]
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_14/bd_44e3_swn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_14/bd_44e3_swn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_15/bd_44e3_sbn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_15/bd_44e3_sbn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_20/bd_44e3_sarn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_ar_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_20/bd_44e3_sarn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_ar_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_21/bd_44e3_srn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_r_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_21/bd_44e3_srn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_r_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_22/bd_44e3_sawn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_aw_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_22/bd_44e3_sawn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_aw_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_23/bd_44e3_swn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_w_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_23/bd_44e3_swn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_w_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_24/bd_44e3_sbn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_b_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_24/bd_44e3_sbn_1_clocks.xdc] for cell 'system_i/axi_smc/inst/s01_nodes/s01_b_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_26/bd_44e3_m00arn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_26/bd_44e3_m00arn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_27/bd_44e3_m00rn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_27/bd_44e3_m00rn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_28/bd_44e3_m00awn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_28/bd_44e3_m00awn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_29/bd_44e3_m00wn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_29/bd_44e3_m00wn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_30/bd_44e3_m00bn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_30/bd_44e3_m00bn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_33/bd_44e3_m01arn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_33/bd_44e3_m01arn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_34/bd_44e3_m01rn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_r_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_34/bd_44e3_m01rn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_r_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_35/bd_44e3_m01awn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_35/bd_44e3_m01awn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_36/bd_44e3_m01wn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_w_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_36/bd_44e3_m01wn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_w_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_37/bd_44e3_m01bn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_b_node/inst'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_37/bd_44e3_m01bn_0_clocks.xdc] for cell 'system_i/axi_smc/inst/m01_nodes/m01_b_node/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/smartconnect.xdc] for cell 'system_i/axi_smc/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/smartconnect.xdc:1]
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_smc_0/smartconnect.xdc] for cell 'system_i/axi_smc/inst'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_board.xdc] for cell 'system_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_board.xdc] for cell 'system_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0.xdc] for cell 'system_i/rst_ps7_0_50M/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0.xdc] for cell 'system_i/rst_ps7_0_50M/U0'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_in'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_n_in'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_in'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_n_in'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_in'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:7]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports adc_clk_p_in]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:7]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:9]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:9]
+WARNING: [Vivado 12-646] clock 'adc_clk' not found. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {adc_dat_a_in[*]}]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:10]
+WARNING: [Vivado 12-646] clock 'adc_clk' not found. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:10]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {adc_dat_b_in[*]}]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_source[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_source[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_source[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_source[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_source[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_cdcs_out'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_cdcs_out'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_cdcs_out'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_cdcs_out'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/clocks.xdc]
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[6]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[7]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[8]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[9]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[10]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[11]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[12]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_a_in[13]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[*]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[0]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[1]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[2]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[3]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[4]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[5]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[6]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[7]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[8]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[9]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[10]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[11]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[12]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_b_in[13]'. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/imports/cfg/ports.xdc]
+Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/new/led.xdc]
+Finished Parsing XDC File [C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.srcs/constrs_1/new/led.xdc]
+INFO: [Project 1-1714] 82 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'system_wrapper'...
+INFO: [Project 1-1687] 873 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1736.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 223 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 158 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 55 instances
+
+Access is denied.
+20 Infos, 153 Warnings, 48 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1736.195 ; gain = 1216.988
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.915 . Memory (MB): peak = 1736.195 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a57a27f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.504 . Memory (MB): peak = 1736.195 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1a57a27f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2062.309 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1a57a27f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1a57a27f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2062.309 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1a57a27f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.282 . Memory (MB): peak = 2062.309 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1a57a27f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.319 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1a57a27f0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.322 . Memory (MB): peak = 2062.309 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-138] Pushed 21 inverter(s) to 144 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 19531a2e7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.522 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Retarget | Checksum: 19531a2e7
+INFO: [Opt 31-389] Phase Retarget created 24 cells and removed 69 cells
+INFO: [Opt 31-1021] In phase Retarget, 80 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 5 load pin(s).
+Phase 4 Constant propagation | Checksum: 2404f7ad0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.670 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Constant propagation | Checksum: 2404f7ad0
+INFO: [Opt 31-389] Phase Constant propagation created 199 cells and removed 450 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 80 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 162d3774c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Sweep | Checksum: 162d3774c
+INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 1597 cells
+INFO: [Opt 31-1021] In phase Sweep, 100 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 162d3774c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2062.309 ; gain = 0.000
+BUFG optimization | Checksum: 162d3774c
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/gen_wroute_fifo.wroute_fifo/gen_srls[0].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/gen_wroute_fifo.wroute_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/gen_wroute_fifo.wroute_fifo/gen_srls[0].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[10].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[15].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[16].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[17].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[18].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[2].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[3].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[4].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[5].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[6].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[7].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[8].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[9].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[2].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[3].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[4].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_si_handler/gen_m_axis_arb_fifo.inst_axis_arb_fifo/gen_srls[0].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_si_handler/gen_m_axis_arb_fifo.inst_axis_arb_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[15].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[16].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[2].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[3].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[4].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_si_handler/gen_m_axis_arb_fifo.inst_axis_arb_fifo/gen_srls[0].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_si_handler/gen_m_axis_arb_fifo.inst_axis_arb_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[0].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[10].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[11].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[16].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[17].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[18].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[19].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[20].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[2].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[3].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[8].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_cmd_fifo/gen_srls[9].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[10].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[11].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[12].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[13].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[14].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[15].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[16].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[17].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[18].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[19].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[20].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[21].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[22].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[23].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[24].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[25].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[26].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[27].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[28].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[29].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[30].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[31].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[32].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[33].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[34].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[35].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[38].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[39].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[40].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[41].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[4].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[5].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[6].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[7].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[8].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[0].r_payld_fifo/gen_srls[9].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[0].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[10].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[11].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[16].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[17].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[18].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[19].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[20].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[2].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[3].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[8].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_cmd_fifo/gen_srls[9].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_payld_fifo/gen_srls[10].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_payld_fifo/gen_srls[11].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_payld_fifo/gen_srls[12].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_payld_fifo/gen_srls[13].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_payld_fifo/gen_srls[14].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_payld_fifo/gen_srls[15].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from system_i/axi_smc/inst/s00_entry_pipeline/s00_si_converter/inst/converter.wrap_narrow_inst/gen_thread_loop[1].r_payld_fifo/gen_srls[16].srl_nx1/shift_reg_reg[0]_srl32 due to none static srl address bits
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 162d3774c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Shift Register Optimization | Checksum: 162d3774c
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1a06b69c0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Post Processing Netlist | Checksum: 1a06b69c0
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 80 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1ba141b81
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2062.309 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1ba141b81
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Phase 9 Finalization | Checksum: 1ba141b81
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2062.309 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              24  |              69  |                                             80  |
+|  Constant propagation         |             199  |             450  |                                             80  |
+|  Sweep                        |               8  |            1597  |                                            100  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             80  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1ba141b81
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2062.309 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2062.309 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 16 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 32
+Ending PowerOpt Patch Enables Task | Checksum: 1ba141b81
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1ba141b81
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2219.504 ; gain = 157.195
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1ba141b81
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1ba141b81
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2219.504 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 253 Warnings, 48 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2219.504 ; gain = 483.309
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+Command: report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.089 . Memory (MB): peak = 2219.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a0809f43
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 185116e8e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 278872361
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 278872361
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 278872361
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 224b5d2ed
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 22a79003a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 22a79003a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1e65bfcf1
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 556 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 232 nets or LUTs. Breaked 0 LUT, combined 232 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            232  |                   232  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            232  |                   232  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1e7af14a7
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 1a0f69d91
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1a0f69d91
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1183dc9a9
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f9c71256
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1a349c530
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 261caedc0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 2323bc0dd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 197612bc4
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1d4e260d4
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1d4e260d4
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19c768057
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=11.835 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: d0f97aa4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.578 . Memory (MB): peak = 2219.504 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: d0f97aa4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.712 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19c768057
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=11.835. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 14c934eef
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 14c934eef
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 14c934eef
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 14c934eef
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 14c934eef
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2219.504 ; gain = 0.000
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 19ff34e78
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Ending Placer Task | Checksum: 10ac5fdef
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2219.504 ; gain = 0.000
+83 Infos, 253 Warnings, 48 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 2219.504 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file system_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2219.504 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_placed.rpt -pb system_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2219.504 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2219.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2219.504 ; gain = 0.000
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+92 Infos, 253 Warnings, 48 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2219.504 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2220.824 ; gain = 1.320
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2220.824 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2220.824 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2220.824 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2220.824 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2220.824 ; gain = 1.320
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.runs/impl_1/system_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 4de5f233 ConstDB: 0 ShapeSum: bce00bbc RouteDB: 0
+Post Restoration Checksum: NetGraph: 58bbbfdc | NumContArr: 3ccbf05d | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 21ad9a573
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2279.508 ; gain = 55.434
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 21ad9a573
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2279.508 ; gain = 55.434
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 21ad9a573
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2279.508 ; gain = 55.434
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2129590d3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2286.516 ; gain = 62.441
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.998 | TNS=0.000  | WHS=-0.288 | THS=-366.935|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 10299
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 10299
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 237f4cbe6
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2288.676 ; gain = 64.602
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 237f4cbe6
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 2288.676 ; gain = 64.602
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 2835a4f94
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2293.648 ; gain = 69.574
+Phase 3 Initial Routing | Checksum: 2835a4f94
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2293.648 ; gain = 69.574
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 873
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.553 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 229745956
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2296.980 ; gain = 72.906
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.553 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2504f80e5
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2297.684 ; gain = 73.609
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.553 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 293f0a5cd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2297.688 ; gain = 73.613
+Phase 4 Rip-up And Reroute | Checksum: 293f0a5cd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2297.688 ; gain = 73.613
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 293f0a5cd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2297.691 ; gain = 73.617
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 293f0a5cd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2297.691 ; gain = 73.617
+Phase 5 Delay and Skew Optimization | Checksum: 293f0a5cd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 2297.691 ; gain = 73.617
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2346cd363
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2297.691 ; gain = 73.617
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.566 | TNS=0.000  | WHS=0.007  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2b3ff8724
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2297.691 ; gain = 73.617
+Phase 6 Post Hold Fix | Checksum: 2b3ff8724
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2297.691 ; gain = 73.617
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 5.10726 %
+  Global Horizontal Routing Utilization  = 6.78562 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 2b3ff8724
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2297.691 ; gain = 73.617
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2b3ff8724
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2299.715 ; gain = 75.641
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2c6b21879
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2299.715 ; gain = 75.641
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=11.566 | TNS=0.000  | WHS=0.007  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 2c6b21879
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 2299.715 ; gain = 75.641
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: 1e9da8a4a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 2299.715 ; gain = 75.641
+Ending Routing Task | Checksum: 1e9da8a4a
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 2299.715 ; gain = 75.641
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+108 Infos, 253 Warnings, 48 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 2299.715 ; gain = 78.891
+INFO: [runtcl-4] Executing : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+118 Infos, 253 Warnings, 48 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file system_wrapper_route_status.rpt -pb system_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file system_wrapper_timing_summary_routed.rpt -pb system_wrapper_timing_summary_routed.pb -rpx system_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_wrapper_bus_skew_routed.rpt -pb system_wrapper_bus_skew_routed.pb -rpx system_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2387.938 ; gain = 15.902
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.912 . Memory (MB): peak = 2398.023 ; gain = 20.074
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2398.023 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.170 . Memory (MB): peak = 2398.023 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2398.023 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2398.023 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2398.023 ; gain = 25.988
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test_3/BRAM_Test_3.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+Command: write_bitstream -force system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2818.922 ; gain = 420.898
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  6 11:11:20 2024...

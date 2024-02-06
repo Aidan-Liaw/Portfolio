@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_record_control_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_record_control" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="31 ps"></ZoomStartTime>
+      <ZoomEndTime time="44 ps"></ZoomEndTime>
+      <Cursor1Time time="42 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="177"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/test_record_control/settings_in" type="array">
+      <obj_property name="ElementShortName">settings_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">settings_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_record_control/trigger_in" type="logic">
+      <obj_property name="ElementShortName">trigger_in</obj_property>
+      <obj_property name="ObjectShortName">trigger_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_record_control/settings_out" type="array">
+      <obj_property name="ElementShortName">settings_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">settings_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_record_control/record_out" type="logic">
+      <obj_property name="ElementShortName">record_out</obj_property>
+      <obj_property name="ObjectShortName">record_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_record_control/record_sets_finished_out" type="logic">
+      <obj_property name="ElementShortName">record_sets_finished_out</obj_property>
+      <obj_property name="ObjectShortName">record_sets_finished_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_record_control/clk_in" type="logic">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_record_control/UUT/samples_count" type="other">
+      <obj_property name="ElementShortName">samples_count</obj_property>
+      <obj_property name="ObjectShortName">samples_count</obj_property>
+   </wvobject>
+</wave_config>

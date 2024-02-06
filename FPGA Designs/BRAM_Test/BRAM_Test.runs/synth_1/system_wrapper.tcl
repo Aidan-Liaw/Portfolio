@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.statsThreshold 360
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -79,28 +80,69 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir {C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.cache/wt} [current_project]
 set_property parent.project_path {C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.xpr} [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part_repo_paths {C:/Users/aidan/Downloads/RedPitaya-FPGA/brd} [current_project]
+set_property board_part redpitaya.com:redpitaya:part0:1.1 [current_project]
 set_property ip_repo_paths c:/Users/aidan/Downloads/RedPitaya-FPGA/prj/Examples/Stopwatch/tmp/cores [current_project]
 update_ip_catalog
 set_property ip_output_repo {c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.srcs/sources_1/bd/system/ip/system_blk_mem_gen_0_0.coe}}
+add_files {{C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.srcs/sources_1/bd/system/ip/system_blk_mem_gen_0_0.coe}}
 read_verilog -library xil_defaultlib {{C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/hdl/system_wrapper.v}}
 add_files {{C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.srcs/sources_1/bd/system/system.bd}}
-set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_processing_system7_0_1/system_processing_system7_0_1.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_bram_ctrl_0_0/system_axi_bram_ctrl_0_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_2/bd_44e3_arsw_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_3/bd_44e3_rsw_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_4/bd_44e3_awsw_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_5/bd_44e3_wsw_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_6/bd_44e3_bsw_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_10/bd_44e3_s00a2s_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_sarn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_12/bd_44e3_srn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_13/bd_44e3_sawn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_14/bd_44e3_swn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_14/bd_44e3_swn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_15/bd_44e3_sbn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_15/bd_44e3_sbn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_19/bd_44e3_s01a2s_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_20/bd_44e3_sarn_1_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_20/bd_44e3_sarn_1_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_21/bd_44e3_srn_1_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_21/bd_44e3_srn_1_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_22/bd_44e3_sawn_1_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_22/bd_44e3_sawn_1_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_23/bd_44e3_swn_1_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_23/bd_44e3_swn_1_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_24/bd_44e3_sbn_1_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_24/bd_44e3_sbn_1_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_25/bd_44e3_m00s2a_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_26/bd_44e3_m00arn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_26/bd_44e3_m00arn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_27/bd_44e3_m00rn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_27/bd_44e3_m00rn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_28/bd_44e3_m00awn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_28/bd_44e3_m00awn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_29/bd_44e3_m00wn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_29/bd_44e3_m00wn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_30/bd_44e3_m00bn_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_30/bd_44e3_m00bn_0_clocks.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_axi_smc_0/smartconnect.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_ooc.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_blk_mem_gen_0_0/system_blk_mem_gen_0_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/system_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.gen/sources_1/bd/system/system_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

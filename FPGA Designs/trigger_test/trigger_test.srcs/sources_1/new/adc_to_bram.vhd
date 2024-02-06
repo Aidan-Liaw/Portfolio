@@ -39,6 +39,7 @@ entity adc_to_bram is
            adc_cdcs_out : out STD_LOGIC;
            adc_rst_in : in STD_LOGIC;
            
+           increment_address_in : in STD_LOGIC;
            bram_address : out STD_LOGIC_VECTOR(31 downto 0);
            bram_data : out STD_LOGIC_VECTOR(31 downto 0)
     );
@@ -63,10 +64,12 @@ begin
             bram_data <= (others => '0');
             address <= TO_UNSIGNED(16#42000000# - 1, 32);
         else
-            if (address /= TO_UNSIGNED(16#42003FFF#, 32)) then
-                address <= address + 1;
-            else
-                address <= TO_UNSIGNED(16#42000000# - 1, 32);
+            if (increment_address_in = '1') then
+                if (address /= TO_UNSIGNED(16#42003FFF#, 32)) then
+                    address <= address + 1;
+                else
+                    address <= TO_UNSIGNED(16#42000000# - 1, 32);
+                end if;
             end if;
             bram_data <= "000000" & adc_dat_a_in(13 downto 4) & "000000" & adc_dat_b_in(13 downto 4);
         end if;

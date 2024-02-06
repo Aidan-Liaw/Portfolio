@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../trigger_test.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../trigger_test.gen/sources_1/bd/system/ipshared/6b2b/hdl" --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../trigger_test.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../../trigger_test.ip_user_files/bd/system/ip/system_blk_mem_gen_1_0/sim/system_blk_mem_gen_1_0.v" \
+"../../../../trigger_test.ip_user_files/bd/system/ip/system_adc_to_bram_0_0/sim/system_adc_to_bram_0_0.v" \
+"../../../../trigger_test.ip_user_files/bd/system/ip/system_xlconstant_0_0/sim/system_xlconstant_0_0.v" \
+"../../../../trigger_test.gen/sources_1/bd/system/hdl/system_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

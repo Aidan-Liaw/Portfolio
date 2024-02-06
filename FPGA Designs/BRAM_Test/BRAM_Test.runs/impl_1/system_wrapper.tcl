@@ -122,10 +122,13 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param tcl.statsThreshold 360
   set_param chipscope.maxJobs 3
   set_param runs.launchOptions { -jobs 12  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
+  set_property board_part_repo_paths {C:/Users/aidan/Downloads/RedPitaya-FPGA/brd} [current_project]
+  set_property board_part redpitaya.com:redpitaya:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
@@ -136,7 +139,7 @@ OPTRACE "set parameters" START { }
   update_ip_catalog
   set_property ip_output_repo {{C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet {{C:/Users/aidan/Portfolio/FPGA Designs/BRAM_Test/BRAM_Test.runs/synth_1/system_wrapper.dcp}}
@@ -315,8 +318,9 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi system_wrapper.mmi }
+  catch { write_bmm -force system_wrapper_bd.bmm }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }
   write_bitstream -force system_wrapper.bit 

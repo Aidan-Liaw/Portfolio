@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1706744263">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1707091027">
   <File Type="ROUTE-PWR" Name="system_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="system_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="system_wrapper_power_summary_routed.pb"/>
@@ -158,7 +158,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -169,8 +171,8 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_rst_ps7_0_125M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_bram_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_ps7_0_50M_0"/>
 </GenRun>
