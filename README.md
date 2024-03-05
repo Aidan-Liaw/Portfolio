@@ -1,2 +1,2 @@
 # Portfolio
-The coding portfolio of Aidan Liaw. 
+The coding and FPGA portfolio of Aidan Liaw. 
